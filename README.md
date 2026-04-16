@@ -1,6 +1,6 @@
 # LF Energy Project Ecosystem
 
-A centralized knowledge base for the LF Energy project ecosystem. Contains project overviews, a taxonomy for categorization, and supporting reference material.
+A centralized knowledge base for the LF Energy project ecosystem. Contains project overviews and a taxonomy for categorization.
 
 ## What's Here
 
