@@ -126,9 +126,9 @@ R&D
 
 - Aetheros
 - EDMI
-- Kalkitech
-- Itron
 - Honeywell
+- Itron
+- Kalkitech
 - Landis+Gyr
 - Sagemcom
 - Savoir-faire Linux
