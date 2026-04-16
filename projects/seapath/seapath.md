@@ -172,6 +172,8 @@ Tracked by the project community here: https://lf-energy.atlassian.net/wiki/spac
 
 ## Additional Notes
 
+The SEAPATH acronym officially means "Software Enabled Automation Platform and Artifacts (Therein)". However, it is rarely used and should not be spelled out unless explicitly directed to do so.
+
 SEAPATH is, to our knowledge, the only open source real-time virtualization platform purpose-built for substation PAC applications. The proprietary alternative in this space is VMware Edge Compute Stack (Broadcom), which offers a vPAC Ready Infrastructure reference architecture through the vPAC Alliance (whose founding members include Advantech, Intel, VMware, and ABB). SEAPATH's open source model gives utilities control over the platform layer rather than depending on a proprietary virtualization vendor — a strategic consideration given that substation infrastructure operates on 20+ year lifecycles.
 
 RTE launched the VIP'R (Virtual PAC RTE) R&D project in 2025 with ABB and Schneider Electric to extend SEAPATH from hosting automation and monitoring functions to hosting virtualized protection functions (vIEDs). This represents the next major frontier for substation virtualization, as protection is the most safety-critical function and has the strictest real-time requirements.
