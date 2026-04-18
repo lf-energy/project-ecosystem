@@ -1,6 +1,6 @@
 # EVerest
 
-**Last Updated:** 2026-03-17
+**Last Updated:** 2026-03-18
 
 ## Table of Contents
 
@@ -19,15 +19,21 @@
 - LF Energy webpage: https://lfenergy.org/projects/everest/
 - Website:
 - Code: https://github.com/EVerest
-- Documentation: https://everest.github.io/nightly/
+- Documentation: https://everest.github.io
 - Calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/everest?view=month
 - LinkedIn: https://www.linkedin.com/showcase/everest-project
-- Community:
+- YouTube (TSC recordings, Talks, Webinars): https://www.youtube.com/@lfe_everest
+- Developer Community:
 	- Mailing List: https://lists.lfenergy.org/g/everest
-	- Zulip: https://lfenergy.zulipchat.com/
+	- Annoucmenet Mailing List: https://lists.lfenergy.org/g/everest-announce
+	- Zulip: https://lfenergy.zulipchat.com
+- EVerest CPO Forum / User group:
+	- Landing Page: https://lfenergy.org/groups/everest-cpo-forum/ 
+	- Mailinglist: https://lists.lfenergy.org/g/everest-cpo
+ 	- Slide Archive: https://drive.google.com/drive/folders/1WFToZ3vxzv0_cggYsSKnxA49-NaREfcT 
 - LFX Insights: https://insights.linuxfoundation.org/project/everest
 - Other:
-	- Roadmap: https://github.com/EVerest/everest/blob/main/tsc/ROADMAP.md
+	- Roadmap: watch latest TSC recording
 
 ## Description
 
@@ -35,7 +41,7 @@ Complete firmware stack for standards-compliant, interoperable, and secure EV ch
 
 ## Overview
 
-EVerest is a complete software stack that runs on EV charging station hardware, handling everything from low-level hardware control to cloud communication. It implements the protocols a charging station needs to communicate with vehicles (ISO 15118, IEC 61851), with back-office management systems (OCPP), and with energy management systems. EVerest's modular architecture allows it to be configured for any charging use case — an unmanaged single-port AC wallbox, a managed workplace charger with authentication and smart charging, or a multi-port public DC fast charging station with integrated payment, metering, and power distribution.
+EVerest is a complete software stack that runs on EV charging station hardware, handling everything from low-level hardware control to cloud communication. It implements the protocols a charging station needs to communicate with vehicles (via e.g. ISO 15118, IEC 61851), with back-office management systems / charge point management systems (via OCPP), and with energy management systems. EVerest's modular architecture allows it to be configured for any charging use case — an unmanaged single-port AC wallbox, a managed workplace charger with authentication and smart charging, or a multi-port public DC fast charging station with integrated payment, metering, and power distribution.
 
 The core problem EVerest solves is interoperability. EV charging involves a combinatorial explosion of standards, vehicle models, charging apps, and back-office systems that must all work together. Industry data shows 10–25% of charging sessions fail, primarily due to connectivity and software errors. Each charging station OEM implementing these standards independently produces different interpretations and bugs, compounding the problem as the ecosystem grows. EVerest addresses this by providing a single, shared implementation of charging protocols that the entire industry can test against, fix, and improve. This is the same approach that made Linux successful: commoditize the shared infrastructure so that companies compete on their unique value rather than duplicating commodity plumbing.
 
@@ -51,11 +57,13 @@ EVerest is deployed as embedded firmware on charging station controllers. Charge
 
 ### What It Does
 
-Provides the full software stack for EV charging stations: vehicle communication, back-office integration, authentication, energy management, and hardware abstraction — running on embedded Linux controllers inside the charger.
+Provides the full software stack for EV charging stations: vehicle communication, CPMS upling, authentication, energy management, and hardware abstraction — running on embedded Linux controllers inside the charger.
 
 ### Problem(s) Solved
 
-**For charger OEMs and CPOs:** Eliminates the need to independently implement dozens of charging standards, reducing development cost and time-to-market while improving interoperability across the fragmented EV charging ecosystem.
+**For charger OEMs:** Eliminates the need to independently implement dozens of charging standards, reducing development cost and time-to-market while improving interoperability across the fragmented EV charging ecosystem.
+
+**For charg point operators (CPOs):** EVerest standardizes charger firmware to easily scale networks using mixed hardware. It reduces IT costs through unified diagnostics and plug-and-play integration, while delivering rapid access to the latest industry standards and features: https://lfenergy.org/groups/everest-cpo-forum/
 
 **For utilities and DSOs:** Provides a standardized, controllable interface to EV chargers as grid-edge assets, enabling smart charging, demand response, and V2G to manage the grid impact of growing EV loads.
 
@@ -65,21 +73,21 @@ Provides the full software stack for EV charging stations: vehicle communication
 - **Vehicle communication**: ISO 15118-2, ISO 15118-3, ISO 15118-20, and DIN 70121 for vehicle-to-charger communication, including Plug & Charge with full PKI support
 - **Back-office integration**: OCPP 1.6 and OCPP 2.0.1 (production-ready, OCA-certified) for charger-to-cloud management system communication; OCPP 2.1 under active development
 - **Energy management**: Hierarchical energy tree that distributes available power across multiple charging ports, with automatic phase switching optimization (1-phase/3-phase) and support for external limits from OCPP or energy management systems
-- **Grid integration protocols**: OpenADR 3.0 (via OpenLEADR, draft PR) and EEBus (on feature branch) for demand response and energy management; Modbus/SunSpec for direct metering and control (shipped)
+- **Grid integration protocols**: OpenADR 3.0 (via OpenLEADR, draft PR) and EEBus for demand response and energy management; Modbus/SunSpec for direct metering and control (shipped)
 - **Authentication**: RFID/NFC readers, ISO 15118 Plug & Charge certificate-based authentication, and OCPP-based authorization
 - **Payment terminal integration**: ZVT protocol support for credit card payment terminals
-- **Metering and calibration law compliance**: Support for Eichrecht-compliant DC power meters (LEM DCBM, DZG GSH01) for legally accurate billing
-- **Hardware abstraction**: Pre-built drivers for DC power supplies (Huawei, InfyPower, UUGreenPower), power meters, isolation monitors, PLC modems, and NFC readers
+- **Metering and calibration law compliance**: Support for Eichrecht-compliant DC power meters for legally accurate billing
+- **Hardware abstraction**: Pre-built drivers for DC power supplies, power meters, isolation monitors, PLC modems, and NFC readers for multiple vendors.
 - **Modular architecture**: ~90+ modules communicating via MQTT, each configurable independently; language bindings for C++, Rust, Python, and JavaScript
-- **Software-in-the-loop simulation**: Full charging simulation without hardware for development, testing, and research
-- **Bidirectional charging (emerging)**: V2G and V2H support through bidirectional power supply drivers; full protocol support depends on ISO 15118-20 and OCPP 2.1, both under active development
+- **Software-in-the-loop simulation**: Full charging simulation without hardware for development, testing, and research. Build in EV side modules, so EV emulators (in HW or SW) are buildable.
+- **Bidirectional charging (emerging)**: V2G and V2H support through bidirectional power supply drivers; full protocol support depends on ISO 15118-20 and OCPP 2.1
 
 ### Relevant Standards
 
 - **ISO 15118** (Parts -2, -3, -20): Vehicle-to-grid communication for EV charging, including Plug & Charge
 - **IEC 61851**: Electric vehicle conductive charging system — physical signaling and safety
 - **DIN SPEC 70121**: DC charging communication (predecessor to ISO 15118 for DC)
-- **OCPP 1.6 / 2.0.1** (IEC 63584): Open Charge Point Protocol for charger-to-back-office communication (OCPP 2.1 in development)
+- **OCPP 1.6 / 2.0.1 / 2.1** (IEC 63584): Open Charge Point Protocol for charger-to-back-office communication
 
 ## Grid Context
 
@@ -105,7 +113,7 @@ Flexibility & Markets — EV Charging
 
 - **Project Intent:** Applied
 - **AI/ML:** No
-- **Deliverable Type:** Software
+- **Deliverable Type:** Software (Firmware)
 
 ## Related Projects
 
@@ -130,17 +138,38 @@ Production
 - Pod Point (Solo 3s)
 - Enteligent (TLCEV)
 - Voltpost
+- NIDEC
+. Kathrein
+- Compleo
+- Amperfied (Heidelberger)
+- Evonity
+
 
 **Component suppliers with EVerest-compatible hardware:**
-- chargebyte
-- PHYTEC
-- Texas Instruments
-- Seeed Studio
+- Pionix (Yeti, Yak, YetiEvDriver, MicroMegaWatt)
+. chargebyte (Charge SOM, Tarragon — in everest-chargebyte repo)
+- PHYTEC (PhyVerso BSP)
+- Texas Instruments (TIDA-010939 AC EVSE reference design)
+- Seeed Studio (reference HW / community boards)
 - Advantech
-- NXP
-- Analog Devices
-- Renesas
-- FEIG
+- NXP Semiconductors (PN7160 NFC, PN532 NFC, NXP NFC Frontend)
+- Analog Devices (AD-ACEVSE22KWZ-KIT — Maxim/ADI)
+- Renesas (RZ/G2L MPU family — dedicated EVerest how-to guide)
+- FEIG Electronic (RFID readers)
+- Huawei (R100040Gx and V100R023C10 DC power modules)
+- AST (DC650 DC powermeter)
+- Acrel (DJSF1352-RN DC powermeter)
+- Carlo Gavazzi (EM580 AC powermeter)
+- DZG Metering (GSH01 powermeter)
+- Isabellenhütte (IEM-DCR DC powermeter)
+- LEM (DCBM 400/600 DC billing meter)
+- Bender (isoCHA425HV isolation monitor / IMD)
+- Dold (RN5893 isolation monitor)
+- Infypower (BEC/BEG DC power modules, incl. BEG1K075G)
+- UU Green Power (UR1000X0 DC power module)
+- Winline (DC power module)
+- SCU Power (DPM 1000-30 DC power module)
+- Meyer Burger / SCU / NXP-based NFC frontends
 
 **Other contributing/supporting organizations:**
 - Pionix (project initiator, primary contributor)
@@ -150,7 +179,21 @@ Production
 - RWTH Aachen
 
 ## Learn More
-
+- EVerest YouTube channel
+	- Webinars: https://www.youtube.com/watch?v=zz5eKCFrW5o&list=PLz6jDPv9LcERApcmCJYEQ-gY8ko5tSuoC
+    - Conference Talks: https://www.youtube.com/watch?v=LMOWuEyP84k&list=PLz6jDPv9LcESfxZlgMFv0i7jF8ZjPKsC6  
+	- Talks outside EVerst channel: https://www.youtube.com/watch?v=9BChXJk9CBc&list=PLz6jDPv9LcERtnOeR3JgGjgp2bUoooF88
+	- Technical steering commitee (monthly updates): https://www.youtube.com/watch?v=3dO7Lg2Cie4&list=PLz6jDPv9LcETJ53Jsw2aJmEgMzdTFh_2x
+- [Real World Interoperability in EV Charging: The Tooling Stack Behind the EVerest Ecosystem](https://fosdem.org/2026/schedule/event/FGZMNF-everest_ecosystem/)
+	- Date: 2026-01-31
+	- Venue: FOSDEM 2026, Energy Devroom (AW1.126), Brussels
+	- Speaker: Marco Möller (Pionix)
+	- Type: Conference Talk
+	- Recording: [YouTube](https://www.youtube.com/watch?v=0cjevmsFhAA)
+- [Webinar Recap: SunSpec & EVerest – Open Standards for EV Charging Infrastructure](https://sunspec.org/sunspec-everest-webinar/)
+	- Date: 2026-03-27 (webinar held 2026-03-25)
+	- Host: SunSpec Alliance
+	- Type: Webinar
 - [From Ambition to Reality: How We Built the Global Open Source Community Around EVerest](https://lfenergysummiteu2025.sched.com/event/27TaN/keynote-from-ambition-to-reality-how-we-built-the-global-open-source-community-around-everest-marco-moller-co-founder-and-ceo-pionix-gmbh)
 	- Date: 2025-09-11
 	- Type: Presentation
@@ -178,6 +221,6 @@ The EV charging firmware market has historically been entirely proprietary, with
 
 From a utility perspective, the grid relevance of EVerest increases as EV penetration grows. Unmanaged EV charging concentrates new load at evening peaks, potentially requiring costly grid reinforcement. EVerest's on-device energy management already enables smart charging (local power distribution, phase switching, external limit enforcement). Grid integration protocols for demand response (OpenADR, EEBus) and bidirectional charging (V2G via ISO 15118-20) are under active development, with integration modules on feature branches. The BiFlex-Industrie R&D project in Germany (funded by the German Federal Ministry for Economic Affairs, ending September 2026) is exploring bidirectional flexibility using company fleets, with chargebyte contributing EVerest-based implementations.
 
-The project launched the EVerest CPO Forum in early 2026, a user group aligning charge point operators and vendors on requirements, interoperability KPIs, and roadmap priorities.
+The project launched the EVerest CPO Forum in late 2025, a user group aligning charge point operators and vendors on requirements, interoperability KPIs, and roadmap priorities.
 
 The U.S. Joint Office of Energy and Transportation (a partnership between the U.S. Department of Energy and Department of Transportation) actively supports EVerest, reflecting growing government interest in open standards for EV charging infrastructure.
