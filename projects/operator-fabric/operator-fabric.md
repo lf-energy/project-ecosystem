@@ -42,7 +42,8 @@ Beyond notification aggregation, OperatorFabric provides a formal coordination w
 
 OperatorFabric was created by RTE (the French TSO) and contributed to LF Energy in 2018. RTE uses it in production across its 8 control centers for crisis management and inter-center coordination. Alliander (Dutch DSO) contributes to the project, particularly on geographic map features for incident visualization. The platform is deployed via Docker containers and integrates with existing operational systems through REST APIs and Kafka.
 
-![[opfab.png]]
+![OperatorFabric UI](images/opfab.avif)
+*OperatorFabric UI*
 
 ## Technical Profile
 
