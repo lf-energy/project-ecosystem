@@ -209,6 +209,7 @@ These are the utility system categories that appear across the portfolio. A visi
 | **Digital Substation** | Digitalized protection, automation, and control | SEAPATH, CoMPAS |
 | **EV Charging Infrastructure** | Charging hardware and management platforms | EVerest, CitrineOS |
 | **AMI** | Advanced Metering Infrastructure — smart metering and edge | GXF, GEISA |
+| **Distribution Automation** | Intelligent monitoring and control of distribution grid assets | GEISA |
 | **Network Planning** | Grid reinforcement and capacity studies | Arras, Power Grid Model, PowSyBl |
 | **WAMPAC** | Wide Area Monitoring, Protection, and Control | p-SWAMP |
 | **Market Management** | Wholesale and flexibility market systems | TROLIE, Shapeshifter |

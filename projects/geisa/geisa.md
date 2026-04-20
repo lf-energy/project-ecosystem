@@ -1,6 +1,6 @@
 # GEISA
 
-**Last Updated:** 2026-04-16
+**Last Updated:** 2026-04-20
 
 ## Table of Contents
 
@@ -34,7 +34,7 @@ Interoperability specification for running third-party applications on grid edge
 
 ## Overview
 
-GEISA (Grid Edge Interoperability and Security Alliance) defines an open specification for grid edge computing environments. It standardizes how applications are deployed, managed, and executed on embedded devices at the grid edge — primarily smart meters, but also capacitor bank controllers, load tap changers, and other distribution automation devices. The specification covers four pillars: a standardized Application Programming Interface (API) for uniform access to device capabilities, an Application & Device Management (ADM) protocol for remote fleet management, and two execution environments — a Linux Execution Environment (LEE) for devices running Linux and a Virtual Execution Environment (VEE) for devices using virtual machines. Standard metering and billing functions are explicitly out of scope; GEISA focuses on advanced capabilities beyond basic metering.  Similarly, standard SCADA operations for distribution automation are out of scope.
+GEISA (Grid Edge Interoperability and Security Alliance) defines an open specification for grid edge computing environments. It standardizes how applications are deployed, managed, and executed on embedded devices at the grid edge — primarily smart meters, but also capacitor bank controllers, load tap changers, and other distribution automation devices. The specification covers four pillars: a standardized Application Programming Interface (API) for uniform access to device capabilities, an Application & Device Management (ADM) protocol for remote fleet management, and two execution environments — a Linux Execution Environment (LEE) for devices running Linux and a Virtual Execution Environment (VEE) for devices using virtual machines. Standard metering and billing functions are explicitly out of scope, as are standard SCADA operations for distribution automation; GEISA focuses on advanced capabilities beyond basic device functions.
 
 The core problem GEISA addresses is vendor lock-in at the grid edge. Today, each device vendor ships its own proprietary application platform, APIs, and management interfaces. An application written for one vendor's meters or devices cannot run on another vendor's hardware, and a utility managing a multi-vendor fleet needs separate management systems for each manufacturer. As the role of the meter evolves — from periodic interval readings to one-second and waveform data capture, from a single-purpose measurement device to a multi-application computing platform serving as communications hub, consumer enabler, and grid sensor — this lack of interoperability becomes a bottleneck. GEISA enables utilities to deploy applications from any vendor onto devices from any vendor using a common management platform, decoupling application innovation from hardware procurement.
 
@@ -61,7 +61,7 @@ Eliminates vendor lock-in for grid edge computing by enabling utilities to deplo
 
 ### Relevant Standards
 
-GEISA is a specification that defines interoperability interfaces for grid edge computing environments. It does not implement existing grid communication or data model standards; however, it does specify the use of some industry standard protocols.  MQTT (https://mqtt.org), LWM2M (https://www.openmobilealliance.org/specifications/lwm2m), and CoAp (https://www.rfc-editor.org/rfc/rfc7252) are all required to develop a GEISA-conformant solution. Beyond this, applications running on GEISA-conformant platforms may implement standards such as OCPP, Matter, Modbus, IEEE 2030.5 or IEC 62056 (DLMS/COSEM), but the GEISA specification defines the platform layer beneath those applications.
+GEISA is a specification that defines interoperability interfaces for grid edge computing environments. It does not implement existing grid communication or data model standards; however, it does specify the use of some industry-standard protocols. MQTT (https://mqtt.org), LwM2M (https://www.openmobilealliance.org/specifications/lwm2m), and CoAP (https://www.rfc-editor.org/rfc/rfc7252) are all required to develop a GEISA-conformant solution. Beyond this, applications running on GEISA-conformant platforms may implement standards such as OCPP, Matter, Modbus, IEEE 2030.5, or IEC 62056 (DLMS/COSEM), but the GEISA specification defines the platform layer beneath those applications.
 
 ## Grid Context
 
@@ -82,7 +82,7 @@ Flexibility & Markets
 #### Component of
 
 - AMI: Provides the application platform specification for next-generation AMI, enabling utilities to deploy advanced analytics, DER orchestration, and grid monitoring applications on smart meters independent of the meter vendor.
-- Distribution Automation:  Provides the application platform specification for next-generation Distribution Automation, enabling utilities to deploy advanced analytics, grid monitoring and control applications on distribution automation devices independent of the vendor.
+- Distribution Automation: Provides the application platform specification for intelligent DA, enabling utilities to deploy advanced analytics, grid monitoring, and control applications on DA controllers independent of the device vendor.
 
 ### Cross-Cutting Tags
 
