@@ -40,8 +40,9 @@ Today, IEC 61850 system configuration typically requires vendor-specific tools â
 
 CoMPAS is deployed on-premise as a set of Docker containers. Engineers access the web-based editor through a browser, while backend services handle file persistence, versioning, and processing. The editor uses a plugin architecture, and the community has contributed plugins for guided engineering workflows and template generation that extend the core platform. The system supports all eight IEC 61850-6 SCL file types (SSD, SCD, ICD, IID, CID, SED, ISD, STD) with role-based access control. It is primarily developed by Alliander and BearingPoint, with contributions from RTE and TransnetBW.
 
-![[CoMPAS-architecture-overview-202320230912.avif]]
-*Image: CoMPAS architecture overview*
+![CoMPAS architecture overview](images/CoMPAS-architecture-overview-202320230912.avif)
+*CoMPAS architecture overview*
+
 ## Technical Profile
 
 ### What It Does

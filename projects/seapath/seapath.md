@@ -40,10 +40,10 @@ Substations today rely on dedicated hardware for each function — separate phys
 
 SEAPATH is deployed in substations by grid operators. RTE (the French TSO) uses SEAPATH in its R#SPACE program for virtualizing HMI, gateway, and automation functions, and is working toward virtualizing protection functions. National Grid Electricity Transmission and GE Vernova have validated SEAPATH for virtualized protection use cases. The platform is hardware-agnostic across x86_64 servers with virtualization support (VT-x/VT-d); production environments typically use IEC 61850-certified server hardware. All contributions are validated through 1000+ automated tests — covering resiliency, cybersecurity, real-time performance, and IEC 61850 latency — run on physical hardware in CI facilities at RTE and Savoir-faire Linux.
 
-![[seapath_in_substation.jpg]]
-*Image shows SEAPATH in how it fits in a substation. Best used for utility engineer audience.*
+![SEAPATH and how it fits in a substation](images/seapath_substation.jpg)
+*Image shows SEAPATH and how it fits in a substation. Best used for utility engineer audience.*
 
-![[seapath_architecture.png]]
+![SEAPATH tech stack](images/seapath_architecture.png)
 *Image shows SEAPATH tech stack. Best used for IT software developer audience.*
 
 ## Technical Profile

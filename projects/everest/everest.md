@@ -41,11 +41,11 @@ The core problem EVerest solves is interoperability. EV charging involves a comb
 
 EVerest is deployed as embedded firmware on charging station controllers. Charger OEMs integrate EVerest into their products, typically on ARM-based Linux boards (e.g., PHYTEC phyVERSO, NXP i.MX-based controllers). Charge point operators (CPOs) benefit from cross-vendor consistency and reduced stranded-asset risk when chargers run on open, maintainable software. For utilities, EVerest's energy management capabilities and growing support for grid integration protocols make EV chargers controllable grid-edge assets rather than unmanaged loads — enabling smart charging, demand response, and emerging vehicle-to-grid (V2G) use cases. Grid protocol support (OpenADR, EEBus) is under active development, with integration modules on feature branches.
 
-![[everest_simplified_context.avif]]
-*Image: Simplified EVerest context*
+![Simplified EVerest context](images/everest_simplified_context.avif)
+*Simplified EVerest context*
 
-![[everest_simplified_achitecture.avif]]
-*Image: Simplified EVerest architecture*
+![Simplified EVerest architecture](images/everest_simplified_achitecture.avif)
+*Simplified EVerest architecture*
 
 ## Technical Profile
 
