@@ -131,6 +131,9 @@ Production
 - [GridSuite and PowSyBl: an Open Source approach to develop advanced tools for grid analysis and simulation of power systems](https://archive.fosdem.org/2024/schedule/event/fosdem-2024-1918-gridsuite-and-powsybl-an-open-source-approach-to-develop-advanced-tools-for-grid-analysis-and-simulation-of-power-systems-/)
 	- Date: 2024-02-03
 	- Type: Presentation
+- [Sharing the operational cost of Europe's electricity grid: optimization and transparency through open source](https://archive.fosdem.org/2024/schedule/event/fosdem-2024-2640-sharing-the-operational-cost-of-europe-s-electricity-grid-optimization-and-transparency-through-open-source/)
+	- Date: 2024-02-03
+	- Type: Presentation
 - PowSyBl: [Electrical Grid Modelling and Simulation Through PowSyBl - A Hands-On Approach](https://community.linuxfoundation.org/events/details/lfhq-lf-energy-presents-electrical-grid-modelling-and-simulation-through-powsybl-a-hands-on-approach/)
 	- Date: 2024-06-03
 	- Type: Presentation
@@ -149,11 +152,8 @@ Production
 - [PowSyBl: A community-led open source project for European grid sovereignty](https://lfenergy.org/powsybl-a-community-led-open-source-project-for-european-grid-sovereignty/)
 	- Date: 2025-10-21
 	- Type: Case Study
-- [Sharing the operational cost of Europe's electricity grid: optimization and transparency through open source](https://archive.fosdem.org/2024/schedule/event/fosdem-2024-2640-sharing-the-operational-cost-of-europe-s-electricity-grid-optimization-and-transparency-through-open-source/)
-	- Date: 2024-02-03
-	- Type: Presentation
- - [Grid Security at Scale: How TenneT Built a 10× Faster Analysis Platform on PowSyBl](https://lfenergy.org/grid-security-at-scale-tennet-powsybl/)
-    - Date: 2026-04-24
+- [Grid Security at Scale: How TenneT Built a 10× Faster Analysis Platform on PowSyBl](https://lfenergy.org/grid-security-at-scale-tennet-powsybl/)
+    - Date: 2026-04-02
     - Type: Case Study
 
 ## Additional Notes
