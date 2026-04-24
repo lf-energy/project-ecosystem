@@ -152,6 +152,9 @@ Production
 - [Sharing the operational cost of Europe's electricity grid: optimization and transparency through open source](https://archive.fosdem.org/2024/schedule/event/fosdem-2024-2640-sharing-the-operational-cost-of-europe-s-electricity-grid-optimization-and-transparency-through-open-source/)
 	- Date: 2024-02-03
 	- Type: Presentation
+ - [Grid Security at Scale: How TenneT Built a 10× Faster Analysis Platform on PowSyBl](https://lfenergy.org/grid-security-at-scale-tennet-powsybl/)
+    - Date: 2026-04-24
+    - Type: Case Study
 
 ## Additional Notes
 
