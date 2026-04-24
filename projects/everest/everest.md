@@ -22,18 +22,22 @@
 - Documentation: https://everest.github.io
 - Calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/everest?view=month
 - LinkedIn: https://www.linkedin.com/showcase/everest-project
-- YouTube (TSC recordings, Talks, Webinars): https://www.youtube.com/@lfe_everest
+- YouTube: https://www.youtube.com/@lfe_everest
+	- Webinars: https://www.youtube.com/watch?v=zz5eKCFrW5o&list=PLz6jDPv9LcERApcmCJYEQ-gY8ko5tSuoC
+	- Conference Talks: https://www.youtube.com/watch?v=LMOWuEyP84k&list=PLz6jDPv9LcESfxZlgMFv0i7jF8ZjPKsC6
+	- External Talks: https://www.youtube.com/watch?v=9BChXJk9CBc&list=PLz6jDPv9LcERtnOeR3JgGjgp2bUoooF88
+	- TSC Meetings: https://www.youtube.com/watch?v=3dO7Lg2Cie4&list=PLz6jDPv9LcETJ53Jsw2aJmEgMzdTFh_2x
 - Developer Community:
 	- Mailing List: https://lists.lfenergy.org/g/everest
-	- Annoucmenet Mailing List: https://lists.lfenergy.org/g/everest-announce
+	- Announcement Mailing List: https://lists.lfenergy.org/g/everest-announce
 	- Zulip: https://lfenergy.zulipchat.com
 - EVerest CPO Forum / User group:
-	- Landing Page: https://lfenergy.org/groups/everest-cpo-forum/ 
-	- Mailinglist: https://lists.lfenergy.org/g/everest-cpo
- 	- Slide Archive: https://drive.google.com/drive/folders/1WFToZ3vxzv0_cggYsSKnxA49-NaREfcT 
+	- Landing Page: https://lfenergy.org/groups/everest-cpo-forum/
+	- Mailing List: https://lists.lfenergy.org/g/everest-cpo
+	- Slide Archive: https://drive.google.com/drive/folders/1WFToZ3vxzv0_cggYsSKnxA49-NaREfcT
 - LFX Insights: https://insights.linuxfoundation.org/project/everest
 - Other:
-	- Roadmap: watch latest EVerest TSC recording https://www.youtube.com/@lfe_everest
+	- Roadmap: watch latest EVerest TSC recording from https://www.youtube.com/watch?v=3dO7Lg2Cie4&list=PLz6jDPv9LcETJ53Jsw2aJmEgMzdTFh_2x
 
 ## Description
 
@@ -41,7 +45,7 @@ Complete firmware stack for standards-compliant, interoperable, and secure EV ch
 
 ## Overview
 
-EVerest is a complete software stack that runs on EV charging station hardware, handling everything from low-level hardware control to cloud communication. It implements the protocols a charging station needs to communicate with vehicles (via e.g. ISO 15118, IEC 61851), with back-office management systems / charge point management systems (via OCPP), and with energy management systems. EVerest's modular architecture allows it to be configured for any charging use case — an unmanaged single-port AC wallbox, a managed workplace charger with authentication and smart charging, or a multi-port public DC fast charging station with integrated payment, metering, and power distribution.
+EVerest is a complete software stack that runs on EV charging station hardware, handling everything from low-level hardware control to cloud communication. It implements the protocols a charging station needs to communicate with vehicles (e.g., ISO 15118, IEC 61851), with back-office management systems / charge point management systems (e.g., OCPP), and with energy management systems. EVerest's modular architecture allows it to be configured for any charging use case — an unmanaged single-port AC wallbox, a managed workplace charger with authentication and smart charging, or a multi-port public DC fast charging station with integrated payment, metering, and power distribution.
 
 The core problem EVerest solves is interoperability. EV charging involves a combinatorial explosion of standards, vehicle models, charging apps, and back-office systems that must all work together. Industry data shows 10–25% of charging sessions fail, primarily due to connectivity and software errors. Each charging station OEM implementing these standards independently produces different interpretations and bugs, compounding the problem as the ecosystem grows. EVerest addresses this by providing a single, shared implementation of charging protocols that the entire industry can test against, fix, and improve. This is the same approach that made Linux successful: commoditize the shared infrastructure so that companies compete on their unique value rather than duplicating commodity plumbing.
 
@@ -57,13 +61,13 @@ EVerest is deployed as embedded firmware on charging station controllers. Charge
 
 ### What It Does
 
-Provides the full software stack for EV charging stations: vehicle communication, CPMS coupling, authentication, energy management, and hardware abstraction — running on embedded Linux controllers inside the charger.
+Provides the full software stack for EV charging stations: vehicle communication, charge point management system (CPMS) integration, authentication, energy management, and hardware abstraction — running on embedded Linux controllers inside the charger.
 
 ### Problem(s) Solved
 
 **For charger OEMs:** Eliminates the need to independently implement dozens of charging standards, reducing development cost and time-to-market while improving interoperability across the fragmented EV charging ecosystem.
 
-**For charge point operators (CPOs):** EVerest standardizes charger firmware to easily scale networks using mixed hardware. It reduces IT costs through unified diagnostics and plug-and-play integration, while delivering rapid access to the latest industry standards and features: https://lfenergy.org/groups/everest-cpo-forum/
+**For charge point operators (CPOs):** EVerest standardizes charger firmware to easily scale networks using mixed hardware. It reduces IT costs through unified diagnostics and plug-and-play integration, while delivering rapid access to the latest industry standards and features.
 
 **For utilities and DSOs:** Provides a standardized, controllable interface to EV chargers as grid-edge assets, enabling smart charging, demand response, and V2G to manage the grid impact of growing EV loads.
 
@@ -77,9 +81,9 @@ Provides the full software stack for EV charging stations: vehicle communication
 - **Authentication**: RFID/NFC readers, ISO 15118 Plug & Charge certificate-based authentication, and OCPP-based authorization
 - **Payment terminal integration**: ZVT protocol support for credit card payment terminals
 - **Metering and calibration law compliance**: Support for Eichrecht-compliant DC power meters for legally accurate billing
-- **Hardware abstraction**: Pre-built drivers for DC power supplies, power meters, isolation monitors, PLC modems, and NFC readers for multiple vendors.
+- **Hardware abstraction**: Pre-built drivers for DC power supplies, power meters, isolation monitors, PLC modems, and NFC readers for multiple vendors
 - **Modular architecture**: ~90+ modules communicating via MQTT, each configurable independently; language bindings for C++, Rust, Python, and JavaScript
-- **Software-in-the-loop simulation**: Full charging simulation without hardware for development, testing, and research. Built-in EV side modules, so EV emulators (in HW or SW) are buildable.
+- **Software-in-the-loop simulation**: Full charging simulation without hardware for development, testing, and research. Built-in EV side modules, so EV emulators (in HW or SW) are buildable
 - **Bidirectional charging (emerging)**: V2G and V2H support through bidirectional power supply drivers; full protocol support depends on ISO 15118-20 and OCPP 2.1
 
 ### Relevant Standards
@@ -113,7 +117,7 @@ Flexibility & Markets — EV Charging
 
 - **Project Intent:** Applied
 - **AI/ML:** No
-- **Deliverable Type:** Software (Firmware)
+- **Deliverable Type:** Software
 
 ## Related Projects
 
@@ -139,37 +143,36 @@ Production
 - Enteligent (TLCEV)
 - Voltpost
 - NIDEC
-. Kathrein
+- Kathrein
 - Compleo
 - Amperfied (Heidelberger)
 - Evonity
 
-
 **Component suppliers with EVerest-compatible hardware:**
-- Pionix (Yeti, Yak, YetiEvDriver, MicroMegaWatt)
-. chargebyte (Charge SOM, Tarragon — in everest-chargebyte repo)
-- PHYTEC (PhyVerso BSP)
-- Texas Instruments (TIDA-010939 AC EVSE reference design)
-- Seeed Studio (reference HW / community boards)
+- Pionix
+- chargebyte
+- PHYTEC
+- Texas Instruments
+- Seeed Studio
 - Advantech
-- NXP Semiconductors (PN7160 NFC, PN532 NFC, NXP NFC Frontend)
-- Analog Devices (AD-ACEVSE22KWZ-KIT — Maxim/ADI)
-- Renesas (RZ/G2L MPU family — dedicated EVerest how-to guide)
-- FEIG Electronic (RFID readers)
-- Huawei (R100040Gx and V100R023C10 DC power modules)
-- AST (DC650 DC powermeter)
-- Acrel (DJSF1352-RN DC powermeter)
-- Carlo Gavazzi (EM580 AC powermeter)
-- DZG Metering (GSH01 powermeter)
-- Isabellenhütte (IEM-DCR DC powermeter)
-- LEM (DCBM 400/600 DC billing meter)
-- Bender (isoCHA425HV isolation monitor / IMD)
-- Dold (RN5893 isolation monitor)
-- Infypower (BEC/BEG DC power modules, incl. BEG1K075G)
-- UU Green Power (UR1000X0 DC power module)
-- Winline (DC power module)
-- SCU Power (DPM 1000-30 DC power module)
-- Meyer Burger / SCU / NXP-based NFC frontends
+- NXP Semiconductors
+- Analog Devices
+- Renesas
+- FEIG Electronic
+- Huawei
+- AST
+- Acrel
+- Carlo Gavazzi
+- DZG Metering
+- Isabellenhütte
+- LEM
+- Bender
+- Dold
+- Infypower
+- UU Green Power
+- Winline
+- SCU Power
+- Meyer Burger
 
 **Other contributing/supporting organizations:**
 - Pionix (project initiator, primary contributor)
@@ -179,20 +182,13 @@ Production
 - RWTH Aachen
 
 ## Learn More
-- EVerest YouTube channel
-	- Webinars: https://www.youtube.com/watch?v=zz5eKCFrW5o&list=PLz6jDPv9LcERApcmCJYEQ-gY8ko5tSuoC
-    - Conference Talks: https://www.youtube.com/watch?v=LMOWuEyP84k&list=PLz6jDPv9LcESfxZlgMFv0i7jF8ZjPKsC6  
-	- Talks outside EVerest channel: https://www.youtube.com/watch?v=9BChXJk9CBc&list=PLz6jDPv9LcERtnOeR3JgGjgp2bUoooF88
-	- Technical steering commitee (monthly updates): https://www.youtube.com/watch?v=3dO7Lg2Cie4&list=PLz6jDPv9LcETJ53Jsw2aJmEgMzdTFh_2x
+
 - [Real World Interoperability in EV Charging: The Tooling Stack Behind the EVerest Ecosystem](https://fosdem.org/2026/schedule/event/FGZMNF-everest_ecosystem/)
 	- Date: 2026-01-31
-	- Venue: FOSDEM 2026, Energy Devroom (AW1.126), Brussels
-	- Speaker: Marco Möller (Pionix)
-	- Type: Conference Talk
+	- Type: Presentation
 	- Recording: [YouTube](https://www.youtube.com/watch?v=0cjevmsFhAA)
-- [Webinar Recap: SunSpec & EVerest – Open Standards for EV Charging Infrastructure](https://sunspec.org/sunspec-everest-webinar/)
-	- Date: 2026-03-27 (webinar held 2026-03-25)
-	- Host: SunSpec Alliance
+- [SunSpec & EVerest – Open Standards for EV Charging Infrastructure](https://sunspec.org/sunspec-everest-webinar/)
+	- Date: 2026-03-25
 	- Type: Webinar
 - [From Ambition to Reality: How We Built the Global Open Source Community Around EVerest](https://lfenergysummiteu2025.sched.com/event/27TaN/keynote-from-ambition-to-reality-how-we-built-the-global-open-source-community-around-everest-marco-moller-co-founder-and-ceo-pionix-gmbh)
 	- Date: 2025-09-11
@@ -209,9 +205,6 @@ Production
 - [Seeed Studio Develops Open Source EV Charging Product Thanks to Zephyr RTOS and LF Energy EVerest](https://lfenergy.org/seeed-studio-develops-open-source-ev-charging-product-thanks-to-zephyr-rtos-and-lf-energy-everest/)
 	- Date: 2024-05-13
 	- Type: Case Study
-- [Real World Interoperability in EV Charging: The Tooling Stack Behind the EVerest Ecosystem](https://www.youtube.com/watch?v=0cjevmsFhAA)
-	- Date: 2026-01-31
-	- Type: Presentation
 
 ## Additional Notes
 
@@ -224,3 +217,31 @@ From a utility perspective, the grid relevance of EVerest increases as EV penetr
 The project launched the EVerest CPO Forum in late 2025, a user group aligning charge point operators and vendors on requirements, interoperability KPIs, and roadmap priorities.
 
 The U.S. Joint Office of Energy and Transportation (a partnership between the U.S. Department of Energy and Department of Transportation) actively supports EVerest, reflecting growing government interest in open standards for EV charging infrastructure.
+
+### EVerest-Compatible Hardware Detail (as of April 2026)
+
+The following lists specific hardware models with EVerest support. This information changes frequently as new drivers are contributed — consult the EVerest GitHub repositories for current status.
+
+- Pionix: Yeti, Yak, YetiEvDriver, MicroMegaWatt
+- chargebyte: Charge SOM, Tarragon (in everest-chargebyte repo)
+- PHYTEC: PhyVerso BSP
+- Texas Instruments: TIDA-010939 AC EVSE reference design
+- Seeed Studio: reference HW / community boards
+- NXP Semiconductors: PN7160 NFC, PN532 NFC, NXP NFC Frontend
+- Analog Devices: AD-ACEVSE22KWZ-KIT (Maxim/ADI)
+- Renesas: RZ/G2L MPU family (dedicated EVerest how-to guide)
+- FEIG Electronic: RFID readers
+- Huawei: R100040Gx and V100R023C10 DC power modules
+- AST: DC650 DC power meter
+- Acrel: DJSF1352-RN DC power meter
+- Carlo Gavazzi: EM580 AC power meter
+- DZG Metering: GSH01 power meter
+- Isabellenhütte: IEM-DCR DC power meter
+- LEM: DCBM 400/600 DC billing meter
+- Bender: isoCHA425HV isolation monitor / IMD
+- Dold: RN5893 isolation monitor
+- Infypower: BEC/BEG DC power modules, incl. BEG1K075G
+- UU Green Power: UR1000X0 DC power module
+- Winline: DC power module
+- SCU Power: DPM 1000-30 DC power module
+- Meyer Burger / SCU / NXP-based NFC frontends
