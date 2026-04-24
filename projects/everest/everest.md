@@ -1,6 +1,6 @@
 # EVerest
 
-**Last Updated:** 2026-03-18
+**Last Updated:** 2026-04-24
 
 ## Table of Contents
 
@@ -33,7 +33,7 @@
  	- Slide Archive: https://drive.google.com/drive/folders/1WFToZ3vxzv0_cggYsSKnxA49-NaREfcT 
 - LFX Insights: https://insights.linuxfoundation.org/project/everest
 - Other:
-	- Roadmap: watch latest TSC recording
+	- Roadmap: watch latest EVerest TSC recording https://www.youtube.com/@lfe_everest
 
 ## Description
 
@@ -57,13 +57,13 @@ EVerest is deployed as embedded firmware on charging station controllers. Charge
 
 ### What It Does
 
-Provides the full software stack for EV charging stations: vehicle communication, CPMS upling, authentication, energy management, and hardware abstraction — running on embedded Linux controllers inside the charger.
+Provides the full software stack for EV charging stations: vehicle communication, CPMS coupling, authentication, energy management, and hardware abstraction — running on embedded Linux controllers inside the charger.
 
 ### Problem(s) Solved
 
 **For charger OEMs:** Eliminates the need to independently implement dozens of charging standards, reducing development cost and time-to-market while improving interoperability across the fragmented EV charging ecosystem.
 
-**For charg point operators (CPOs):** EVerest standardizes charger firmware to easily scale networks using mixed hardware. It reduces IT costs through unified diagnostics and plug-and-play integration, while delivering rapid access to the latest industry standards and features: https://lfenergy.org/groups/everest-cpo-forum/
+**For charge point operators (CPOs):** EVerest standardizes charger firmware to easily scale networks using mixed hardware. It reduces IT costs through unified diagnostics and plug-and-play integration, while delivering rapid access to the latest industry standards and features: https://lfenergy.org/groups/everest-cpo-forum/
 
 **For utilities and DSOs:** Provides a standardized, controllable interface to EV chargers as grid-edge assets, enabling smart charging, demand response, and V2G to manage the grid impact of growing EV loads.
 
@@ -73,13 +73,13 @@ Provides the full software stack for EV charging stations: vehicle communication
 - **Vehicle communication**: ISO 15118-2, ISO 15118-3, ISO 15118-20, and DIN 70121 for vehicle-to-charger communication, including Plug & Charge with full PKI support
 - **Back-office integration**: OCPP 1.6 and OCPP 2.0.1 (production-ready, OCA-certified) for charger-to-cloud management system communication; OCPP 2.1 under active development
 - **Energy management**: Hierarchical energy tree that distributes available power across multiple charging ports, with automatic phase switching optimization (1-phase/3-phase) and support for external limits from OCPP or energy management systems
-- **Grid integration protocols**: OpenADR 3.0 (via OpenLEADR, draft PR) and EEBus for demand response and energy management; Modbus/SunSpec for direct metering and control (shipped)
+- **Grid integration protocols**: OpenADR 3.0 (via OpenLEADR, draft PR) and EEBus for demand response and energy management; Modbus/SunSpec for direct metering and control
 - **Authentication**: RFID/NFC readers, ISO 15118 Plug & Charge certificate-based authentication, and OCPP-based authorization
 - **Payment terminal integration**: ZVT protocol support for credit card payment terminals
 - **Metering and calibration law compliance**: Support for Eichrecht-compliant DC power meters for legally accurate billing
 - **Hardware abstraction**: Pre-built drivers for DC power supplies, power meters, isolation monitors, PLC modems, and NFC readers for multiple vendors.
 - **Modular architecture**: ~90+ modules communicating via MQTT, each configurable independently; language bindings for C++, Rust, Python, and JavaScript
-- **Software-in-the-loop simulation**: Full charging simulation without hardware for development, testing, and research. Build in EV side modules, so EV emulators (in HW or SW) are buildable.
+- **Software-in-the-loop simulation**: Full charging simulation without hardware for development, testing, and research. Built-in EV side modules, so EV emulators (in HW or SW) are buildable.
 - **Bidirectional charging (emerging)**: V2G and V2H support through bidirectional power supply drivers; full protocol support depends on ISO 15118-20 and OCPP 2.1
 
 ### Relevant Standards
@@ -182,7 +182,7 @@ Production
 - EVerest YouTube channel
 	- Webinars: https://www.youtube.com/watch?v=zz5eKCFrW5o&list=PLz6jDPv9LcERApcmCJYEQ-gY8ko5tSuoC
     - Conference Talks: https://www.youtube.com/watch?v=LMOWuEyP84k&list=PLz6jDPv9LcESfxZlgMFv0i7jF8ZjPKsC6  
-	- Talks outside EVerst channel: https://www.youtube.com/watch?v=9BChXJk9CBc&list=PLz6jDPv9LcERtnOeR3JgGjgp2bUoooF88
+	- Talks outside EVerest channel: https://www.youtube.com/watch?v=9BChXJk9CBc&list=PLz6jDPv9LcERtnOeR3JgGjgp2bUoooF88
 	- Technical steering commitee (monthly updates): https://www.youtube.com/watch?v=3dO7Lg2Cie4&list=PLz6jDPv9LcETJ53Jsw2aJmEgMzdTFh_2x
 - [Real World Interoperability in EV Charging: The Tooling Stack Behind the EVerest Ecosystem](https://fosdem.org/2026/schedule/event/FGZMNF-everest_ecosystem/)
 	- Date: 2026-01-31
