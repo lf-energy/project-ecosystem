@@ -79,7 +79,7 @@ Transmission
 
 ### Function
 
-Grid Modeling, Simulation & Visualization
+Grid Modeling & Simulation
 
 ### Industry Solution Categories
 
@@ -134,7 +134,7 @@ Production
 - [Sharing the operational cost of Europe's electricity grid: optimization and transparency through open source](https://archive.fosdem.org/2024/schedule/event/fosdem-2024-2640-sharing-the-operational-cost-of-europe-s-electricity-grid-optimization-and-transparency-through-open-source/)
 	- Date: 2024-02-03
 	- Type: Presentation
-- PowSyBl: [Electrical Grid Modelling and Simulation Through PowSyBl - A Hands-On Approach](https://community.linuxfoundation.org/events/details/lfhq-lf-energy-presents-electrical-grid-modelling-and-simulation-through-powsybl-a-hands-on-approach/)
+- [Electrical Grid Modelling and Simulation Through PowSyBl - A Hands-On Approach](https://community.linuxfoundation.org/events/details/lfhq-lf-energy-presents-electrical-grid-modelling-and-simulation-through-powsybl-a-hands-on-approach/)
 	- Date: 2024-06-03
 	- Type: Presentation
 - [European Merging Function made open source](https://lfenergysummit2024.sched.com/event/1ehIZ/european-merging-function-made-open-source-kristjan-vilgo-baltic-rcc-elering)
