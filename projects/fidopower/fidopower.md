@@ -101,7 +101,7 @@ Sandbox
 
 R&D
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 <!-- TODO: Confirm contributing organizations. The project shares lineage with Arras (same CEC/SLAC origins). Eudoxys Sciences may be involved but is not confirmed as a FIDOpower contributor. -->
 

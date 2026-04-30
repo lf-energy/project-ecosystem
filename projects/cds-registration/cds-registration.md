@@ -106,7 +106,7 @@ LFESS Working Group
 
 R&D
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - UtilityAPI (primary maintainer; customer data access platform provider)
 - Flexidao (contributor; clean energy certificate and carbon accounting platform)

@@ -109,7 +109,7 @@ Sandbox
 
 Production
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - S44 Energy (project initiator, primary contributor; offers TopazEV commercial distribution built on CitrineOS)
 

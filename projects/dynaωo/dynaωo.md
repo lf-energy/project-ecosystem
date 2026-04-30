@@ -106,7 +106,7 @@ Incubation
 
 Production
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - RTE (primary developer; production user — DynaWaltz used daily in national control center for voltage stability analysis)
 

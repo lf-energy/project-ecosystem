@@ -107,7 +107,7 @@ Incubation
 
 R&D
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - ElaadNL (primary developer/sponsor — Dutch knowledge and innovation center for charging infrastructure)
 - Tweede Golf (primary developer — Rust software consultancy)

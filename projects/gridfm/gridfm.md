@@ -107,7 +107,7 @@ Sandbox
 
 R&D
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - Hydro-Québec
 - IBM

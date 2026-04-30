@@ -112,7 +112,7 @@ Early Adoption
 
 Production
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - RTE (production user, primary developer)
 - Alliander (contributor — geographic map visualization features)

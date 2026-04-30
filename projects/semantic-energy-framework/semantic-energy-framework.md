@@ -107,7 +107,7 @@ Sandbox
 
 R&D
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - INESC TEC (co-developer; lead on Generic Adapter and pilot integration)
 - TNO (co-developer; lead on Knowledge Engine)

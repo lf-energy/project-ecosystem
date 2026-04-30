@@ -103,7 +103,7 @@ Sandbox
 
 R&D
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - Futurewei (contributor)
 - Energy IoT Open Source (contributor)

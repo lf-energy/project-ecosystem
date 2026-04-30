@@ -103,7 +103,7 @@ Sandbox
 
 R&D
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - Statnett (primary developer; Norwegian TSO)
 - SINTEF Energy Research (research partner)

@@ -108,7 +108,7 @@ Early Adoption
 
 Production
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - Alliander (founding contributor and primary maintainer)
 

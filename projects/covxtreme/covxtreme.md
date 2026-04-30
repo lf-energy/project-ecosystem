@@ -106,7 +106,7 @@ Sandbox
 
 Production (in offshore engineering; no known grid/utility deployments)
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - Shell (primary developer; production user for offshore metocean engineering)
 - Lancaster University (co-developer; academic research partner)

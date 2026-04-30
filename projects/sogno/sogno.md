@@ -129,7 +129,7 @@ R&D
 
 Component maturity varies significantly. DPsim and the CIM tooling are the most mature and actively maintained components, with broader use in research and academic settings. The integrated platform services (state estimation, forecasting APIs) were demonstrated in EU-funded field trials but have not reached production deployment at utilities.
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - RWTH Aachen University (primary developer, project coordinator)
 - Fraunhofer FIT — Digital Energy (active development, technical lead)

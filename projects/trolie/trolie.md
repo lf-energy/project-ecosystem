@@ -113,7 +113,7 @@ LFESS Working Group
 
 Production
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - MISO (co-originator)
 - GE Vernova (co-originator; lead maintainer; adopted TROLIE specification in its Limit Exchange Portal product for ISOs and TOs, as of June 2025)

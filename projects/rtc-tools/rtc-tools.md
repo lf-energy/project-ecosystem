@@ -106,7 +106,7 @@ Sandbox
 
 Production
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - Deltares (primary developer; production deployments for hydropower scheduling worldwide)
 - PortfolioEnergy (co-maintainer; commercial BESS trading platform built on RTC-Tools)

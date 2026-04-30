@@ -107,7 +107,7 @@ Sandbox
 
 R&D
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - Centre for Net Zero (primary developer of Faraday synthetic smart meter model; funded by Octopus Energy Group)
 - RTE (French TSO; data provider for D-GITT transmission topology datasets)

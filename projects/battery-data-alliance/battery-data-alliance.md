@@ -107,7 +107,7 @@ Sandbox
 
 R&D
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - AmpLabs (contributed battery data analysis examples and tooling; AmpLabs founder Gabe Hege serves as BDA chairperson)
 - BattGenie (donated PyCTIArbin and PyMacNet cycler control libraries to BDA)

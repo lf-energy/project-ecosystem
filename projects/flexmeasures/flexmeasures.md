@@ -109,7 +109,7 @@ Incubation
 
 Production
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - Seita BV (primary developer; uses FlexMeasures as backend for commercial energy flexibility services)
 - Thiink Inc (early adopter — simulation and testing of energy management solutions)

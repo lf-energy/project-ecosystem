@@ -118,7 +118,7 @@ Incubation
 
 Production
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - Alliander (production user)
 - Enexis (production user)

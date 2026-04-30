@@ -107,7 +107,7 @@ Incubation
 
 Production
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - Recurve Analytics (primary developer; provides commercial FLEX platform built on OpenDSM)
 
