@@ -105,7 +105,7 @@ Sandbox
 
 R&D
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - Sony Computer Science Laboratories (Sony CSL) — original developer of APIS; contributed the codebase to LF Energy in 2021
 - Energy IoT Open Source (Arila Barnes, TSC as of September 2024)

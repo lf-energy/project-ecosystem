@@ -113,7 +113,7 @@ R&D
 
 <!-- The specification is in draft status. No known production implementations by utilities as of early 2026. -->
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - UtilityAPI (primary maintainer; customer data access platform provider)
 - Flexidao (contributor; clean energy certificate and carbon accounting platform)

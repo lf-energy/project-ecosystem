@@ -113,7 +113,7 @@ R&D
 - Production: One or more utilities running in production to plan or operate the grid
 -->
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 #### Utilities
 

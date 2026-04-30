@@ -112,7 +112,7 @@ LFESS Working Group
 
 R&D
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - [Flux Tailor](https://fluxtailor.com/) (initiating sponsor, technical lead, and working group chair)
 - National Laboratory of the Rockies (NLR) (formal MOU partnership for open standard development; maintains the Utility Rate Database)

@@ -105,7 +105,7 @@ Sandbox
 
 Production (in industrial energy operations; no confirmed utility grid deployments)
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - Shell (primary developer; production deployment managing 3M+ sensors across global operations)
 - Databricks (technology partner and backer)

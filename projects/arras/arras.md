@@ -111,7 +111,7 @@ R&D
 
 <!-- TODO: Verify deployment maturity. The CEC project involved California utility engagement (Southern California Edison, PG&E feeder models), but it's unclear whether any utility has deployed Arras in a production planning workflow vs. R&D/evaluation use. If utility production use can be confirmed, this should be upgraded to Piloting. -->
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - Eudoxys Sciences (David P. Chassin, project lead)
 - SLAC National Accelerator Laboratory (original HiPAS GridLAB-D developer; Stanford University)

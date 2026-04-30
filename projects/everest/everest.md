@@ -134,7 +134,7 @@ Early Adoption
 
 Production
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 **Charger OEMs with known EVerest-based products:**
 - Mahle (chargeBIG)

@@ -30,3 +30,14 @@ If you're working on overviews locally, store relevant reference material in `pr
 ## Contributing
 
 Changes are made via pull request. For updates to a project overview, the relevant project TSC will be added as a reviewer. If you spot something that needs correcting, open a PR or an issue.
+
+## FAQ
+
+**Who is the audience for project overviews?**
+Project overviews are internal source material for the LF Energy community, not public-facing content. They provide a shared factual foundation that is then used to produce derivative works — website pages, slide decks, case studies, and marketing collateral — each tailored to its own audience.
+
+**What are Cross-Cutting Tags?**
+Cross-cutting tags are filtering dimensions used in the project taxonomy to help discover and navigate LF Energy projects. Think of them as filters on a future project directory — a user could filter by AI/ML, for example, to find projects where AI is core to what the project does. See `taxonomy.md` for tag definitions, the test for each tag, and the rationale behind specific tagging decisions.
+
+**What counts as a "Supporting / Adopting Organization"?**
+Any organization that actively uses or contributes to a project — including research institutes, universities, and government labs, not just commercial companies. The key word is *active*: if an organization is using or contributing to the project, list them. If they are only interested or evaluating, leave them off until involvement is concrete.

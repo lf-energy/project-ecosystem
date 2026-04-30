@@ -108,7 +108,7 @@ Sandbox
 
 R&D
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - RTE (primary developer and maintainer; uses Grid2Op for internal research on grid operations)
 

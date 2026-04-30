@@ -115,7 +115,7 @@ Incubation
 
 Production
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - Alliander (primary developer; production user — operational forecasts at hundreds of grid locations)
 - Sigholm (production user — forecasting engine for Aurora by Sigholm district heating optimization platform; as of December 2025, serving ~40% of Sweden's district heating production)

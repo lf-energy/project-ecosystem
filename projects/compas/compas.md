@@ -108,7 +108,7 @@ Incubation
 
 R&D
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - Alliander
 - RTE

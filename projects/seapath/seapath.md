@@ -112,7 +112,7 @@ Early Adoption
 
 Piloting
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 Tracked by the project community here: https://lf-energy.atlassian.net/wiki/spaces/SEAP/pages/367099911/SEAPATH+Initiatives+in+the+World
 

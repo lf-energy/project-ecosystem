@@ -117,7 +117,7 @@ Early Adoption
 
 Production
 
-### Supporting / Adopting Companies
+### Supporting / Adopting Organizations
 
 - RTE (production user, TSC member)
 - BalticRCC (production user)
