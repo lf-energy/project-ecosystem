@@ -23,8 +23,8 @@
 - Calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/flexmeasures?view=month
 - LinkedIn:
 - Community:
-	- Mailing List:
-	- Slack:
+	- Mailing List: https://lists.lfenergy.org/g/flexmeasures
+	- Slack: the #flexmeasures channel at https://slack.lfenergy.org
 - LFX Insights: https://insights.linuxfoundation.org/project/flexmeasures
 - Other:
 
@@ -56,15 +56,20 @@ Enables energy service companies and asset operators to optimize the dispatch of
 - Process scheduling for shiftable, breakable, and inflexible industrial loads with time-window restrictions and duration requirements
 - Multi-asset scheduling across sites with shared grid connection capacity constraints
 - Built-in forecasting using LightGBM models, with support for weather and other external regressors; also accepts third-party forecast imports
-- REST API (v3.0) for data ingestion, schedule retrieval, and sensor management, using USEF-aligned terminology
+- REST API (v3.0) for data ingestion, schedule triggering & retrieval, and asset/sensor/user management. The flexmeasures-client library wraps the API to allow easier scripting.
 - Plugin architecture (Flask Blueprints) for extending schedulers, API endpoints, UI views, and CLI commands; available plugins include ENTSO-E market data integration and Home Assistant connectivity (both maintained by the core development team as separate packages)
-- Multi-tenancy with role-based access control and per-account white-labeling
+- Multi-tenancy with role-based access control and per-account white-labeling.
 - Built-in web UI for asset visualization, schedule monitoring, and data exploration
 - Probabilistic data model (timely-beliefs framework) that tracks data provenance, belief timing, and uncertainty
+- Dockerized for container-based cloud integration
+- 2FA and audit logging for enterprise support
+- CLI for managing on servers and to write custom cron tasks.
 
 ### Relevant Standards
 
-None. FlexMeasures uses USEF terminology and concepts for its API and data model but does not implement the USEF Flex Trading Protocol (UFTP) — that function is served by the Shapeshifter project.
+- The [S2 standard](http://s2standard.org/) has gotten some support in the flexmeasures-client.
+- OpenADR integration is planned in 2026 (FlexMeasure as VEN)
+- FlexMeasures uses USEF terminology and concepts for its API and data model but does not implement the USEF Flex Trading Protocol (UFTP) yet — that function is served by the Shapeshifter project.
 
 ## Grid Context
 
@@ -89,7 +94,7 @@ Flexibility & Markets
 ### Cross-Cutting Tags
 
 - **Project Intent:** Applied
-- **AI/ML:** No
+- **AI/ML:** Forecasting uses ML, scheduling uses OR
 - **Deliverable Type:** Software
 
 ## Related Projects
@@ -112,12 +117,16 @@ Production
 ### Supporting / Adopting Organizations
 
 - Seita BV (primary developer; uses FlexMeasures as backend for commercial energy flexibility services)
-- Thiink Inc (early adopter — simulation and testing of energy management solutions)
-- iRasus Technologies (early adopter — BESS scheduling and price-based optimization in India)
+- Thiink Inc (early adopter — simulation and testing of energy management solutions in U.S./Sweden)
+- Ecofix GP (early adopter — HEMS scheduling and price-based optimization in Belgium)
+- Silla Industries (early adopter ― EV charging in Italy)
 
 ## Learn More
 
-TODO: Identify and add key presentations, blog posts, and case studies with dates and local filepaths.
+- [FlexMeasures tour in less than 4 minutes (2026)](https://vimeo.com/1174183998?fl=pl&fe=cm)
+- [Tutorial at FOSDEM (2024)](https://fosdem.org/2024/schedule/event/fosdem-2024-2509-using-flexmeasures-to-build-a-climate-tech-startup-in-15-minutes/)
+- [V2G Example at FOSDEM 2023](https://archive.fosdem.org/2023/schedule/event/energy_v2gliberty/)
+- [Python podcast interview (2022)](https://www.pythonpodcast.com/flexmeasures-energy-management-system-episode-381/)
 
 ## Additional Notes
 
