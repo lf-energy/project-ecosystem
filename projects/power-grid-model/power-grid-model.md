@@ -24,7 +24,7 @@
 - LinkedIn:
 - Community:
 	- Mailing List: https://lists.lfenergy.org/g/powergridmodel
-	- Slack:
+	- Slack: https://lfenergy.slack.com/archives/C04UBM6S539
 	- GitHub Discussions: https://github.com/orgs/PowerGridModel/discussions
 - LFX Insights: https://insights.linuxfoundation.org/project/powergridmodel
 - Other:
