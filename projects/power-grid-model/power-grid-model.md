@@ -49,7 +49,7 @@ Performs steady-state power system calculations — power flow, state estimation
 
 ### Problem(s) Solved
 
-Enables utilities to run large-scale distribution network analysis programmatically, replacing manual workflows tied to commercial desktop tools. Supports both planning studies (evaluating network reinforcement options across many scenarios) and operational use cases (near-real-time state estimation for congestion management).
+Enables utilities to run large-scale distribution network analysis programmatically, replacing manual workflows tied to commercial desktop tools. Supports operational use cases like near-real-time state estimation for congestion management, operational planning, grid connection planning as well as strategic and ivestment planning.
 
 ### Key Capabilities
 
