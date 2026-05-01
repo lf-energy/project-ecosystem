@@ -112,7 +112,7 @@ Grid Modeling & Simulation
 
 ### LF Energy Stage
 
-Incubation
+Early adoption
 
 ### Deployment Maturity
 
