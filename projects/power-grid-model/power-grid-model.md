@@ -24,7 +24,7 @@
 - LinkedIn:
 - Community:
 	- Mailing List: https://lists.lfenergy.org/g/powergridmodel
-	- Slack:
+	- Slack: https://lfenergy.slack.com/archives/C04UBM6S539
 	- GitHub Discussions: https://github.com/orgs/PowerGridModel/discussions
 - LFX Insights: https://insights.linuxfoundation.org/project/powergridmodel
 - Other:
@@ -49,7 +49,7 @@ Performs steady-state power system calculations — power flow, state estimation
 
 ### Problem(s) Solved
 
-Enables utilities to run large-scale distribution network analysis programmatically, replacing manual workflows tied to commercial desktop tools. Supports both planning studies (evaluating network reinforcement options across many scenarios) and operational use cases (near-real-time state estimation for congestion management).
+Enables utilities to run large-scale distribution network analysis programmatically, replacing manual workflows tied to commercial desktop tools. Supports operational use cases like near-real-time state estimation for congestion management, operational planning, grid connection planning as well as strategic and investment planning.
 
 ### Key Capabilities
 
@@ -106,13 +106,13 @@ Grid Modeling & Simulation
 ### External
 
 - **PandaPower**: PGM provides data format converters for PandaPower networks (via power-grid-model-io) and is validated against PandaPower results. PGM offers significantly higher performance for batch and asymmetric calculations.
-- **GridCal**: Both are open source power system analysis tools. GridCal is research-oriented with a GUI; PGM is a headless calculation library optimized for high-performance programmatic use.
+- **GridCal**: Both are open source power system analysis tools. GridCal is research-oriented with a GUI; PGM is a headless calculation library optimized for high-performance programmatic use. PGM is integrated in GridCal as one of the calculation engines.
 
 ## Maturity & Adoption
 
 ### LF Energy Stage
 
-Incubation
+Early adoption
 
 ### Deployment Maturity
 
@@ -122,7 +122,7 @@ Production
 
 - Alliander (production user)
 - Enexis (production user)
-- Stedin (production user)
+- Stedin
 - TU Delft
 - TU Eindhoven
 - RSE
@@ -153,4 +153,4 @@ Production
 
 PGM originated at Alliander, the largest Dutch DSO, where it serves as a foundational building block across multiple production applications — from long-term grid planning to active congestion management. This dual use (planning and operations) within a single DSO demonstrates the library's versatility and is relatively unusual for grid analysis tools, which tend to serve one domain or the other. The project's multi-stakeholder community now includes all three major Dutch DSOs, two Dutch technical universities, an Italian research institution (RSE), and a German energy software vendor (Soptim), who has built a CGMES-to-PGM conversion suite on top of the library.
 
-**Technical architecture**: The project follows a layered design — the C++ calculation core (`power-grid-model`) provides maximum performance, the Python API provides accessibility for data scientists and engineers, `power-grid-model-io` handles data format conversion from various industry formats, and `power-grid-model-ds` provides a higher-level interface for common data science workflows. All components are licensed under MPL-2.0.
+**Technical architecture**: The project follows a layered design — the C++ calculation core (`power-grid-model`) provides maximum performance, the Python API provides accessibility for data scientists and engineers. Between the C++ core and the Python API the project also has a C API, making it accessable through other languages as well. `power-grid-model-io` handles data format conversion from various industry formats, and `power-grid-model-ds` provides a higher-level interface for common data science workflows. All components are licensed under MPL-2.0.
