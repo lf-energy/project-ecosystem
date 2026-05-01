@@ -106,7 +106,7 @@ Grid Modeling & Simulation
 ### External
 
 - **PandaPower**: PGM provides data format converters for PandaPower networks (via power-grid-model-io) and is validated against PandaPower results. PGM offers significantly higher performance for batch and asymmetric calculations.
-- **GridCal**: Both are open source power system analysis tools. GridCal is research-oriented with a GUI; PGM is a headless calculation library optimized for high-performance programmatic use.
+- **GridCal**: Both are open source power system analysis tools. GridCal is research-oriented with a GUI; PGM is a headless calculation library optimized for high-performance programmatic use. PGM is integrated in GridCal as one of the calculation engines.
 
 ## Maturity & Adoption
 
