@@ -1,6 +1,6 @@
 # OpenLEADR
 
-**Last Updated:** 2026-03-13
+**Last Updated:** 2026-05-04
 
 ## Table of Contents
 
@@ -17,9 +17,9 @@
 ## Basic Info
 
 - LF Energy webpage: https://lfenergy.org/projects/openleadr/
-- Website:
+- Website: https://openleadr.org/
 - Code: https://github.com/openleadr
-- Documentation:
+- Documentation: https://github.com/OpenLEADR/openleadr-rs
 - Calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/openleadr?view=month
 - LinkedIn:
 - Community:
@@ -44,7 +44,7 @@ The primary use case driving OpenLEADR development is Grid Aware Charging (GAC) 
 
 ### What It Does
 
-Provides an OpenADR 3.0 VTN server and VEN client library that enable automated demand response communication — the VTN publishes programs and events (price signals, usage limits), and VENs poll for those events and submit reports on their response.
+Provides an OpenADR 3.1 VTN server and VEN client library that enable automated demand response communication — the VTN publishes programs and events (price signals, usage limits), and VENs poll for those events and submit reports on their response.
 
 ### Problem(s) Solved
 
@@ -52,7 +52,7 @@ Gives utilities and aggregators a standards-based way to signal demand response 
 
 ### Key Capabilities
 
-- OpenADR 3.0 VTN server with REST API, deployable as a single binary or via Docker
+- OpenADR 3.1 VTN server with REST API, deployable as a single binary or via Docker
 - VEN client library for integrating demand response signal reception into devices or aggregator platforms
 - CRUD operations for programs, events, reports, VENs, and resources
 - Authentication and authorization via built-in OAuth provider, with support for third-party OAuth
@@ -63,7 +63,7 @@ Gives utilities and aggregators a standards-based way to signal demand response 
 
 ### Relevant Standards
 
-- OpenADR 3.0 (OpenADR Alliance) — the project implements the OpenADR 3.0 specification for demand response communication
+- OpenADR 3.1 (OpenADR Alliance) — the project implements the OpenADR 3.1 specification for demand response communication
 
 ## Grid Context
 
