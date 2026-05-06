@@ -94,7 +94,7 @@ Flexibility & Markets
 ### Cross-Cutting Tags
 
 - **Project Intent:** Applied
-- **AI/ML:** Forecasting uses ML, scheduling uses OR
+- **AI/ML:** No
 - **Deliverable Type:** Software
 
 ## Related Projects
