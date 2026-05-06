@@ -67,8 +67,8 @@ Enables energy service companies and asset operators to optimize the dispatch of
 
 ### Relevant Standards
 
-- The [S2 standard](http://s2standard.org/) has gotten some support in the flexmeasures-client.
-- OpenADR integration is planned in 2026 (FlexMeasure as VEN)
+- The [S2 standard](http://s2standard.org/) has gotten some support in the flexmeasures-client, namely the control types FRBC (e.g. buffers like battery, EV, hot water tank) and DDBC (e.g. hybrid heat pump). FlexMeasures acts as CEM (energy manager), and could be local or in the cloud for this.
+- [OpenADR](https://www.openadr.org/faq#2) integration is planned in 2026 (FlexMeasure as VEN)
 - FlexMeasures uses USEF terminology and concepts for its API and data model but does not implement the USEF Flex Trading Protocol (UFTP) yet — that function is served by the Shapeshifter project.
 
 ## Grid Context
