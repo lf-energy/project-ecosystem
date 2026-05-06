@@ -1,6 +1,6 @@
 # FlexMeasures
 
-**Last Updated:** 2026-03-13
+**Last Updated:** 2026-05-06
 
 ## Table of Contents
 
@@ -24,9 +24,10 @@
 - LinkedIn:
 - Community:
 	- Mailing List: https://lists.lfenergy.org/g/flexmeasures
-	- Slack: the #flexmeasures channel at https://slack.lfenergy.org
+	- Slack: https://lfenergy.slack.com/archives/C02MK01L36U
 - LFX Insights: https://insights.linuxfoundation.org/project/flexmeasures
 - Other:
+	- Docker Hub: https://hub.docker.com/r/lfenergy/flexmeasures
 
 ## Description
 
@@ -56,20 +57,20 @@ Enables energy service companies and asset operators to optimize the dispatch of
 - Process scheduling for shiftable, breakable, and inflexible industrial loads with time-window restrictions and duration requirements
 - Multi-asset scheduling across sites with shared grid connection capacity constraints
 - Built-in forecasting using LightGBM models, with support for weather and other external regressors; also accepts third-party forecast imports
-- REST API (v3.0) for data ingestion, schedule triggering & retrieval, and asset/sensor/user management. The flexmeasures-client library wraps the API to allow easier scripting.
+- REST API (v3.0) for data ingestion, schedule triggering and retrieval, and asset/sensor/user management
+- Python client library (flexmeasures-client) that wraps the REST API for easier scripting
 - Plugin architecture (Flask Blueprints) for extending schedulers, API endpoints, UI views, and CLI commands; available plugins include ENTSO-E market data integration and Home Assistant connectivity (both maintained by the core development team as separate packages)
-- Multi-tenancy with role-based access control and per-account white-labeling.
+- Multi-tenancy with role-based access control and per-account white-labeling
 - Built-in web UI for asset visualization, schedule monitoring, and data exploration
 - Probabilistic data model (timely-beliefs framework) that tracks data provenance, belief timing, and uncertainty
-- Dockerized for container-based cloud integration
-- 2FA and audit logging for enterprise support
-- CLI for managing on servers and to write custom cron tasks.
+- Official Docker images published on Docker Hub
+- Two-factor authentication and audit logging
+- CLI for server administration and custom cron-driven tasks
 
 ### Relevant Standards
 
-- The [S2 standard](http://s2standard.org/) has gotten some support in the flexmeasures-client, namely the control types FRBC (e.g. buffers like battery, EV, hot water tank) and DDBC (e.g. hybrid heat pump). FlexMeasures acts as CEM (energy manager), and could be local or in the cloud for this.
-- [OpenADR](https://www.openadr.org/faq#2) integration is planned in 2026 (FlexMeasure as VEN)
-- FlexMeasures uses USEF terminology and concepts for its API and data model but does not implement the USEF Flex Trading Protocol (UFTP) yet — that function is served by the Shapeshifter project.
+- **S2** (http://s2standard.org/): the flexmeasures-client library has partial support for S2's FRBC control type (buffer-like assets such as batteries, EVs, hot water tanks) and DDBC control type (e.g., hybrid heat pumps). FlexMeasures acts as the Customer Energy Manager (CEM), deployable locally or in the cloud.
+- FlexMeasures uses USEF terminology and concepts for its API and data model but does not implement the USEF Flex Trading Protocol (UFTP) — that function is served by the Shapeshifter project.
 
 ## Grid Context
 
@@ -117,16 +118,24 @@ Production
 ### Supporting / Adopting Organizations
 
 - Seita BV (primary developer; uses FlexMeasures as backend for commercial energy flexibility services)
-- Thiink Inc (early adopter — simulation and testing of energy management solutions in U.S./Sweden)
-- Ecofix GP (early adopter — HEMS scheduling and price-based optimization in Belgium)
-- Silla Industries (early adopter ― EV charging in Italy)
+- Thiink Inc (early adopter; simulation and testing of energy management solutions in the U.S. and Sweden)
+- Ecofix GP (early adopter; HEMS scheduling and price-based optimization in Belgium)
+- Silla Industries (early adopter; EV charging in Italy)
 
 ## Learn More
 
-- [FlexMeasures tour in less than 4 minutes (2026)](https://vimeo.com/1174183998?fl=pl&fe=cm)
-- [Tutorial at FOSDEM (2024)](https://fosdem.org/2024/schedule/event/fosdem-2024-2509-using-flexmeasures-to-build-a-climate-tech-startup-in-15-minutes/)
-- [V2G Example at FOSDEM 2023](https://archive.fosdem.org/2023/schedule/event/energy_v2gliberty/)
-- [Python podcast interview (2022)](https://www.pythonpodcast.com/flexmeasures-energy-management-system-episode-381/)
+- [FlexMeasures tour in less than 4 minutes](https://vimeo.com/1174183998)                                                              
+	- Date: 2026-03-16
+	- Type: Video                                                                                                                     
+- [Using FlexMeasures to Build a Climate Tech Startup in 15 Minutes](https://fosdem.org/2024/schedule/event/fosdem-2024-2509-using-flexmeasures-to-build-a-climate-tech-startup-in-15-minutes/)
+	- Date: 2024-02-03
+	- Type: Presentation                                                                                                              
+- [V2G Liberty: Vehicle-to-Grid with FlexMeasures](https://archive.fosdem.org/2023/schedule/event/energy_v2gliberty/)
+	- Date: 2023-02-04                                                                                                                
+	- Type: Presentation
+- [Take Control Of Your Electrical Systems With The Open Source FlexMeasures Energy Management System](https://www.pythonpodcast.com/flexmeasures-energy-management-system-episode-381/)                                               
+	- Date: 2022-10-16
+	- Type: Podcast
 
 ## Additional Notes
 
