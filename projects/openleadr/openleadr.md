@@ -1,6 +1,6 @@
 # OpenLEADR
 
-**Last Updated:** 2026-05-04
+**Last Updated:** 2026-05-13
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@
 ## Basic Info
 
 - LF Energy webpage: https://lfenergy.org/projects/openleadr/
-- Website: https://openleadr.org/
+- Website: 
 - Code: https://github.com/openleadr
 - Documentation: https://github.com/OpenLEADR/openleadr-rs
 - Calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/openleadr?view=month
