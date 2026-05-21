@@ -74,7 +74,7 @@ Eliminates the need for third-party energy service providers to build custom dat
 
 ### Grid Segment
 
-Distribution
+Customer (primary), Distribution (secondary)
 
 ### Function
 

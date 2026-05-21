@@ -69,7 +69,7 @@ Reduces the integration burden when a DSO or aggregator needs to exchange data w
 
 ### Grid Segment
 
-Behind the Meter (primary), Distribution (secondary)
+Customer (primary), Distribution (secondary)
 
 ### Function
 

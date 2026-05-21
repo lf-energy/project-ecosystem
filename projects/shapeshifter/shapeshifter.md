@@ -69,7 +69,7 @@ Enables grid operators to procure demand-side flexibility from aggregators using
 
 ### Grid Segment
 
-Transmission, Distribution
+Distribution
 
 ### Function
 

@@ -71,7 +71,7 @@ Enables utilities and program administrators to measure savings from demand-side
 
 ### Grid Segment
 
-Distribution, Behind the Meter
+Customer
 
 ### Function
 

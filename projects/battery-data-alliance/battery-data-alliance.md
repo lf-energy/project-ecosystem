@@ -77,7 +77,7 @@ Not directly applicable. BDA operates upstream of grid deployment, in battery R&
 
 ### Function
 
-Interoperability & Data
+Outside the grid taxonomy. BDA's function is data and format standardization for the battery testing ecosystem, which addresses the battery R&D, manufacturing, and lab software value chain rather than the grid value chain that organizes this taxonomy.
 
 ### Industry Solution Categories
 
