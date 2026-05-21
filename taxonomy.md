@@ -107,9 +107,9 @@ This category covers the full stack of flexibility management, from the firmware
 |---------|------------|-------------|-------------|
 | FlexMeasures | | Customer | Customer-sited energy asset optimization |
 | RTC-Tools | | Generation | Multi-asset dispatch optimization (hydropower, BESS, multi-market) |
-| Shapeshifter | | Transmission, Distribution | Flexibility trading protocol between grid operators and aggregators |
+| Shapeshifter | | Distribution | Flexibility trading protocol between grid operators and aggregators |
 | OpenLEADR | | Distribution, Customer | Automated demand response communication (OpenADR) |
-| OpenDSM | | Distribution, Customer | Demand-side program measurement and verification |
+| OpenDSM | | Customer | Demand-side program measurement and verification |
 | Hyphae | | Customer | DC microgrid autonomous energy sharing |
 | ORES | | Customer | Modular, plug-and-play residential DER systems |
 | GEISA | | Distribution | Grid edge application interoperability for smart meters and DA controllers |
@@ -190,7 +190,7 @@ Summary of current borderline placements:
 |---|---|---|---|---|
 | **Grid Modeling & Simulation** | | PowSyBl, Dynawo, GridFM, OpenSynth | Power Grid Model, Arras, FIDOpower, GridFM, OpenSynth, SOGNO* | |
 | **Grid Operations** | RTDIP | OperatorFabric, Grid2Op, p-SWAMP, SEAPATH+, CoMPAS+ | OperatorFabric*, SOGNO, OpenSTEF, GXF, SEAPATH+, CoMPAS+ | |
-| **Flexibility & Markets** | RTC-Tools | Shapeshifter | Shapeshifter, OpenLEADR, OpenDSM, GEISA | FlexMeasures, OpenLEADR*, OpenDSM, Hyphae, ORES, EVerest+, CitrineOS+ |
+| **Flexibility & Markets** | RTC-Tools | | Shapeshifter, OpenLEADR, GEISA | FlexMeasures, OpenLEADR*, OpenDSM, Hyphae, ORES, EVerest+, CitrineOS+ |
 | **Interoperability & Data** | | TROLIE | CDS Registration, CDS Customer Data*, URPX*, SEF* | CDS Customer Data, URPX, SEF |
 
 \* = secondary segment or secondary function category

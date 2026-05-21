@@ -71,7 +71,7 @@ Enables utilities and program administrators to measure savings from demand-side
 
 ### Grid Segment
 
-Distribution, Customer
+Customer
 
 ### Function
 
