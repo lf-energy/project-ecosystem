@@ -69,7 +69,7 @@ Gives utilities and aggregators a standards-based way to signal demand response 
 
 ### Grid Segment
 
-Distribution (primary), Behind the Meter (secondary)
+Distribution (primary), Customer (secondary)
 
 ### Function
 

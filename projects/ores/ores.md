@@ -67,7 +67,7 @@ None. The specification references OpenADR, SunSpec, Matter, and IEC 61850 as re
 
 ### Grid Segment
 
-Behind the Meter
+Customer
 
 ### Function
 

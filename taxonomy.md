@@ -1,6 +1,6 @@
 # LF Energy Project Taxonomy
 
-**Last Updated:** 2026-03-18
+**Last Updated:** 2026-05-21
 
 ## Contents
 
@@ -11,7 +11,7 @@
   - [Grid Operations](#grid-operations)
   - [Flexibility & Markets](#flexibility--markets)
   - [Interoperability & Data](#interoperability--data)
-  - [Projects That Don't Fit Cleanly](#projects-that-dont-fit-cleanly)
+  - [Outside the Grid Taxonomy](#outside-the-grid-taxonomy)
   - [Borderline Placement Decisions](#borderline-placement-decisions)
 - [Grid Segment x Function Matrix](#grid-segment-x-function-matrix)
 - [Industry Solution Categories](#industry-solution-categories)
@@ -37,13 +37,13 @@ Grid Segment describes **where on the energy system** a project operates. These 
 | **Generation** | Power production assets and associated systems — power plants, wind farms, solar farms, hydropower facilities |
 | **Transmission** | Bulk power delivery network — high-voltage lines, substations, and interconnections managed by TSOs, RCCs, and ISOs/RTOs |
 | **Distribution** | Local power delivery network — medium- and low-voltage infrastructure managed by DSOs, delivering power to end customers |
-| **Behind the Meter** | Customer-sited systems — DER, EV charging, microgrids, home/building energy management, and other assets on the customer side of the utility meter |
+| **Customer** | Customer-sited systems and customer-facing interfaces — DER, EV charging, microgrids, home/building energy management, customer data access, rate transparency, and other assets and services oriented toward the energy customer |
 
 ### Usage
 
 - Projects may be tagged with multiple segments where they genuinely operate across boundaries (e.g., a protection platform deployed in both transmission and distribution substations).
 - When a project has a primary and secondary segment, indicate this (e.g., "Distribution (primary), Transmission (secondary)").
-- Some projects are energy-adjacent but do not map to a specific grid segment (e.g., battery R&D data standards, extreme weather hazard analysis). These do not require a Grid Segment tag.
+- Some projects sit outside the grid taxonomy entirely (e.g., battery R&D data standards, extreme weather hazard analysis) and do not map to a grid segment. See [Outside the Grid Taxonomy](#outside-the-grid-taxonomy).
 
 ## Function
 
@@ -83,7 +83,7 @@ Projects in this category help grid operators manage the operating grid — from
 | SOGNO | | Distribution | Distribution grid monitoring, state estimation, and automation |
 | OpenSTEF | | Distribution | Short-term (up to 48-hour) energy load forecasting for operational congestion management |
 | GXF | | Distribution | IoT field device communication and management |
-| TROLIE | | Transmission | Transmission facility ratings exchange (FERC Order 881) |
+| RTDIP | | Generation | Cloud-native time-series data platform for sensor and meter data at scale |
 | Grid2Op | | Transmission | Simulation environment for developing automated grid control strategies |
 | p-SWAMP | | Transmission | Wide-area monitoring, protection, and control R&D platform |
 | SEAPATH | Substation Digitalization | Transmission, Distribution | Virtualization platform for protection, automation, and control applications |
@@ -93,7 +93,7 @@ Projects in this category help grid operators manage the operating grid — from
 - **SOGNO** is also tagged as a secondary category in Grid Modeling & Simulation, due to its DPsim simulation engine and CIM data modeling libraries which have independent value as modeling tools.
 - **OpenSTEF** produces 48-hour-ahead forecasts — not "real-time" in the SCADA sense, but its purpose is operational congestion management, and it is a component of ADMS (an operational system).
 - **Grid2Op** and **p-SWAMP** are research platforms, not production operations tools. They are categorized here because their purpose is specifically to advance grid operations capabilities (RL-based control strategies and WAMPAC, respectively). Their research nature should be noted in project descriptions and can be captured through future cross-cutting tags.
-- **TROLIE** is an API specification, but its function is enabling operational ratings exchange. Could alternatively be categorized under Interoperability & Data; placed here because its purpose is tightly coupled to transmission operations (FERC Order 881 compliance).
+- **RTDIP** is a time-series data platform; its purpose is operational data management for generation assets (originally renewable generation operations). Placed in Grid Operations rather than Interoperability & Data because it is a platform you run for operations, not a standardized exchange specification.
 
 #### Flexibility & Markets
 
@@ -105,16 +105,16 @@ This category covers the full stack of flexibility management, from the firmware
 
 | Project | Subcategory | Grid Segment | What it does |
 |---------|------------|-------------|-------------|
-| FlexMeasures | | Behind the Meter | Behind-the-meter energy asset optimization |
+| FlexMeasures | | Customer | Customer-sited energy asset optimization |
 | RTC-Tools | | Generation | Multi-asset dispatch optimization (hydropower, BESS, multi-market) |
 | Shapeshifter | | Transmission, Distribution | Flexibility trading protocol between grid operators and aggregators |
-| OpenLEADR | | Distribution, Behind the Meter | Automated demand response communication (OpenADR) |
-| OpenDSM | | Distribution, Behind the Meter | Demand-side program measurement and verification |
-| Hyphae | | Behind the Meter | DC microgrid autonomous energy sharing |
-| ORES | | Behind the Meter | Modular, plug-and-play residential DER systems |
+| OpenLEADR | | Distribution, Customer | Automated demand response communication (OpenADR) |
+| OpenDSM | | Distribution, Customer | Demand-side program measurement and verification |
+| Hyphae | | Customer | DC microgrid autonomous energy sharing |
+| ORES | | Customer | Modular, plug-and-play residential DER systems |
 | GEISA | | Distribution | Grid edge application interoperability for smart meters and DA controllers |
-| EVerest | EV Charging | Behind the Meter | Standards-compliant EV charger firmware stack |
-| CitrineOS | EV Charging | Behind the Meter | OCPP-based charging station management system |
+| EVerest | EV Charging | Customer | Standards-compliant EV charger firmware stack |
+| CitrineOS | EV Charging | Customer | OCPP-based charging station management system |
 
 **Notes on specific placements:**
 - **GEISA** defines application interoperability on grid edge devices — it enables DER and AMI applications to run on distribution-level hardware, making it a better fit here than in Interoperability & Data (which focuses on data exchange).
@@ -128,12 +128,17 @@ Projects in this category exist specifically to solve the interoperability probl
 
 | Project | Grid Segment | What it does |
 |---------|-------------|-------------|
-| CDS Customer Data | Distribution | Standardized APIs for authorized third-party access to customer energy data |
+| CDS Customer Data | Customer, Distribution | Standardized APIs for authorized third-party access to customer energy data |
 | CDS Registration | Distribution | Utility API discovery, registration, and secure connectivity |
-| URPX | Distribution | Machine-readable format for utility rate plan data |
-| SEF | Distribution, Behind the Meter | Semantic interoperability middleware using ontology-based knowledge graphs |
-| RTDIP | Generation | Cloud-native time-series data platform for sensor and meter data at scale |
-| Battery Data Alliance | *(none)* | Shared software standards and data formats for battery testing |
+| URPX | Customer, Distribution | Machine-readable format for utility rate plan data |
+| SEF | Customer, Distribution | Semantic interoperability middleware using ontology-based knowledge graphs |
+| TROLIE | Transmission | Transmission facility ratings exchange (FERC Order 881) |
+
+**Notes on specific placements:**
+- **TROLIE** is an API specification for transmission facility ratings exchange. Downstream consumers include both system operators (reliability) and market participants (capacity bidding under dynamic ratings). Placed here because its primary function is enabling standardized exchange, not operating the grid or participating in markets directly.
+- **CDS Customer Data** enables multiple downstream uses (energy management, project evaluation, grid flexibility, building benchmarking). Placed here rather than Flexibility & Markets because flexibility is one of several consumers; the project's purpose is standardized customer data access, not flexibility participation itself.
+- **URPX** describes rate plan data consumed by customer-side optimization tools, project evaluators, and tariff comparison services. Placed here rather than Flexibility & Markets for the same reason as CDS Customer Data — the project standardizes data, it does not execute market activity.
+- **SEF** is a general-purpose semantic interoperability middleware. While often applied to DSO–customer system integration, it is not flexibility-specific and could equally support transmission–distribution or other cross-system integration.
 
 ### Subcategory Format
 
@@ -151,39 +156,47 @@ Grid Operations
 Flexibility & Markets
 ```
 
-### Projects That Don't Fit Cleanly
+### Outside the Grid Taxonomy
 
-| Project | Why it doesn't fit | Grid Segment |
-|---------|-------------------|-------------|
-| covXtreme | Extreme weather hazard analysis — energy-adjacent (offshore wind, infrastructure design) but not grid-specific | *(none)* |
+This taxonomy is organized around the grid value chain. Some LF Energy projects address energy industry problems that sit outside that value chain and are listed here rather than forced into ill-fitting grid categories.
 
-covXtreme provides statistical tools for modeling extreme environmental events. While relevant to energy infrastructure planning (particularly offshore wind), it is a general-purpose hazard analysis toolkit rather than a grid-specific tool.
+| Project | Rationale |
+|---------|-----------|
+| Battery Data Alliance | Shared software standards and data formats for battery testing — addresses the battery R&D, manufacturing, and lab software ecosystem rather than grid operations |
+| covXtreme | Statistical tools for modeling extreme environmental events — relevant to offshore wind and infrastructure design, but a general-purpose hazard analysis toolkit rather than a grid-specific tool |
+
+**Watch:** An asset management function may emerge as anticipated 2026 project additions land (reliability modeling, asset renewal optimization, LiDAR-based asset condition analytics). covXtreme would likely fit such a category alongside those projects. Revisit when the cluster has more than one inhabitant.
 
 ### Borderline Placement Decisions
 
 When a project could reasonably fit in more than one function category, the reasoning for the chosen placement is documented in the "Notes on specific placements" section within the relevant category above. This preserves context for future reviewers and enables informed updates if new information emerges.
 
+**Guiding principle:** Place by primary function, not by deliverable format or downstream consumer. A specification or data standard that serves a single function belongs *with that function* (e.g., GEISA in Flexibility & Markets). Interoperability & Data is reserved for multi-function or cross-cutting standards that cannot be cleanly assigned to a single function.
+
 Summary of current borderline placements:
 
-- **TROLIE:** Grid Operations (operational purpose) vs. Interoperability & Data (API specification deliverable)
+- **TROLIE:** Interoperability & Data (serves both operations and markets via standardized ratings exchange) vs. Grid Operations (operational use of the exchanged data)
+- **RTDIP:** Grid Operations (operational data platform for generation) vs. Interoperability & Data (cloud data infrastructure with APIs)
+- **CDS Customer Data, URPX:** Interoperability & Data (multiple downstream uses including flexibility, project evaluation, benchmarking) vs. Flexibility & Markets (one of several consumers)
+- **SEF:** Interoperability & Data (general-purpose semantic interop) vs. Flexibility & Markets (frequently applied to DSO–customer integration)
 - **SOGNO:** Primary Grid Operations (DSO automation mission), secondary Grid Modeling & Simulation (DPsim and CIM tooling)
-- **GEISA:** Flexibility & Markets (enables DER/AMI edge applications) vs. Interoperability & Data (interoperability specification, but for applications not data)
-- **OpenSynth:** Grid Modeling & Simulation (feeds modeling tools) vs. Interoperability & Data (data commons, but users are modelers not integrators)
+- **GEISA:** Flexibility & Markets (enables DER/AMI edge applications — single function served) vs. Interoperability & Data (interoperability specification, but for a specific function)
+- **OpenSynth:** Grid Modeling & Simulation (serves modeling specifically) vs. Interoperability & Data (data commons, but users are modelers not integrators)
 - **Grid2Op, p-SWAMP:** Grid Operations (purpose: advancing grid control) vs. Grid Modeling & Simulation (method: simulation/research)
 
 ## Grid Segment x Function Matrix
 
-|  | **Generation** | **Transmission** | **Distribution** | **Behind the Meter** |
+|  | **Generation** | **Transmission** | **Distribution** | **Customer** |
 |---|---|---|---|---|
 | **Grid Modeling & Simulation** | | PowSyBl, Dynawo, GridFM, OpenSynth | Power Grid Model, Arras, FIDOpower, GridFM, OpenSynth, SOGNO* | |
-| **Grid Operations** | | OperatorFabric, TROLIE, Grid2Op, p-SWAMP, SEAPATH+, CoMPAS+ | OperatorFabric*, SOGNO, OpenSTEF, GXF, SEAPATH+, CoMPAS+ | |
+| **Grid Operations** | RTDIP | OperatorFabric, Grid2Op, p-SWAMP, SEAPATH+, CoMPAS+ | OperatorFabric*, SOGNO, OpenSTEF, GXF, SEAPATH+, CoMPAS+ | |
 | **Flexibility & Markets** | RTC-Tools | Shapeshifter | Shapeshifter, OpenLEADR, OpenDSM, GEISA | FlexMeasures, OpenLEADR*, OpenDSM, Hyphae, ORES, EVerest+, CitrineOS+ |
-| **Interoperability & Data** | RTDIP | | CDS Customer Data, CDS Registration, URPX, SEF | SEF* |
+| **Interoperability & Data** | | TROLIE | CDS Registration, CDS Customer Data*, URPX*, SEF* | CDS Customer Data, URPX, SEF |
 
 \* = secondary segment or secondary function category
 \+ = subcategory (Substation Digitalization or EV Charging)
 
-**Not shown:** Battery Data Alliance (Interoperability & Data, no grid segment), covXtreme (no function category, no grid segment)
+**Not shown:** Battery Data Alliance and covXtreme are listed in [Outside the Grid Taxonomy](#outside-the-grid-taxonomy).
 
 ## Industry Solution Categories
 
@@ -214,7 +227,7 @@ These are the utility system categories that appear across the portfolio. A visi
 | **WAMPAC** | Wide Area Monitoring, Protection, and Control | p-SWAMP |
 | **Market Management** | Wholesale and flexibility market systems | TROLIE, Shapeshifter |
 
-Not all projects appear in this table. Projects that are standalone tools (Grid2Op, OpenSynth, covXtreme), emerging categories without established utility system names (CDS family, URPX, SEF), or adjacent to the grid (Battery Data Alliance) may not have a Component of mapping.
+Not all projects appear in this table. Projects that are standalone tools (Grid2Op, OpenSynth), emerging categories without established utility system names (CDS family, URPX, SEF), or outside the grid taxonomy (Battery Data Alliance, covXtreme) may not have a Component of mapping.
 
 ## Cross-Cutting Tags
 

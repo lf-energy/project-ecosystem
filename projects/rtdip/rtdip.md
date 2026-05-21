@@ -73,7 +73,7 @@ Generation
 
 ### Function
 
-Interoperability & Data
+Grid Operations
 
 ### Industry Solution Categories
 

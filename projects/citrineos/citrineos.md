@@ -73,7 +73,7 @@ Receives OCPP messages from EV charging stations over WebSocket, processes them 
 
 ### Grid Segment
 
-Behind the Meter
+Customer
 
 ### Function
 
