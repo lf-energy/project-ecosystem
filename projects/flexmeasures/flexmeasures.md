@@ -76,7 +76,7 @@ Enables energy service companies and asset operators to optimize the dispatch of
 
 ### Grid Segment
 
-Behind the Meter
+Customer
 
 ### Function
 

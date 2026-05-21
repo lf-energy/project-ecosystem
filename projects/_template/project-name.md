@@ -86,7 +86,7 @@ Limit to major, industry-recognized standards (IEC, IEEE, ISO, IETF, etc.) -->
 
 ### Grid Segment
 
-Generation, Transmission, Distribution, Behind the Meter
+Generation, Transmission, Distribution, Customer
 
 <!-- Where on the energy system does this project operate? List all applicable segments.
 Indicate primary vs. secondary if relevant (e.g., "Distribution (primary), Transmission (secondary)").

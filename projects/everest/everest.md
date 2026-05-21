@@ -97,7 +97,7 @@ Provides the full software stack for EV charging stations: vehicle communication
 
 ### Grid Segment
 
-Behind the Meter (primary), Distribution (secondary)
+Customer (primary), Distribution (secondary)
 
 ### Function
 

@@ -78,7 +78,7 @@ Transmission
 
 ### Function
 
-Grid Operations
+Interoperability & Data
 
 ### Industry Solution Categories
 
