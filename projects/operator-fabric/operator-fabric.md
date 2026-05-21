@@ -1,6 +1,6 @@
 # OperatorFabric
 
-**Last Updated:** 2026-03-13
+**Last Updated:** 2026-05-21
 
 ## Table of Contents
 
@@ -100,7 +100,7 @@ Grid Operations
 
 ## Related Projects
 
-None at this time.
+- **AINETUS**: Complementary — AINETUS develops AI components (RL agents, explainability, an Interactive AI interface) that produce remedial-action recommendations for transmission operators. OperatorFabric is the type of control-room HMI through which such recommendations would reach operators, and the AINETUS Interactive AI interface is described by the project's authors as an evolution of the hypervision concept developed by RTE that also underpins OperatorFabric.
 
 ## Maturity & Adoption
 
