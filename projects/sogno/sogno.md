@@ -91,7 +91,7 @@ Distribution
 
 ### Function
 
-Grid Operations (primary), Grid Modeling & Simulation (secondary)
+Operations (primary), Planning & Analysis (secondary)
 
 ### Industry Solution Categories
 
@@ -110,6 +110,7 @@ Grid Operations (primary), Grid Modeling & Simulation (secondary)
 
 - **Project Intent:** Applied
 - **AI/ML:** No
+- **Modeling & Simulation:** Yes
 - **Deliverable Type:** Software
 
 ## Related Projects

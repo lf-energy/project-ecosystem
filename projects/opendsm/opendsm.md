@@ -71,11 +71,11 @@ Enables utilities and program administrators to measure savings from demand-side
 
 ### Grid Segment
 
-Customer
+Behind-the-meter
 
 ### Function
 
-Flexibility & Markets
+Markets & Programs
 
 ### Industry Solution Categories
 

@@ -97,11 +97,11 @@ Provides the full software stack for EV charging stations: vehicle communication
 
 ### Grid Segment
 
-Customer (primary), Distribution (secondary)
+Behind-the-meter (primary), Distribution (secondary)
 
 ### Function
 
-Flexibility & Markets — EV Charging
+Operations — EV Charging
 
 ### Industry Solution Categories
 

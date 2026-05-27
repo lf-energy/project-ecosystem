@@ -71,7 +71,7 @@ Transmission
 
 ### Function
 
-Grid Operations
+Operations
 
 ### Industry Solution Categories
 

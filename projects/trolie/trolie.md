@@ -78,7 +78,7 @@ Transmission
 
 ### Function
 
-Interoperability & Data
+Operations
 
 ### Industry Solution Categories
 

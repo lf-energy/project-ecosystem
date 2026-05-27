@@ -69,11 +69,11 @@ None. OpenSynth is a data and model repository. The D-GITT datasets use PowSyBl'
 
 ### Grid Segment
 
-Distribution, Transmission
+Transmission, Distribution
 
 ### Function
 
-Grid Modeling & Simulation
+Planning & Analysis
 
 ### Industry Solution Categories
 

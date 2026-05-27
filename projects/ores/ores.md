@@ -67,11 +67,11 @@ None. The specification references OpenADR, SunSpec, Matter, and IEC 61850 as re
 
 ### Grid Segment
 
-Customer
+Behind-the-meter
 
 ### Function
 
-Flexibility & Markets
+Operations
 
 ### Industry Solution Categories
 

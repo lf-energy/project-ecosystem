@@ -79,7 +79,7 @@ Transmission, Distribution
 
 ### Function
 
-Grid Operations — Substation Digitalization
+Operations — Substation Digitalization
 
 ### Industry Solution Categories
 
