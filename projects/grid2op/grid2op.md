@@ -1,6 +1,6 @@
 # Grid2Op
 
-**Last Updated:** 2026-03-13
+**Last Updated:** 2026-05-21
 
 ## Table of Contents
 
@@ -97,6 +97,7 @@ None. Grid2Op is a standalone research and development tool, not a component of 
 - **PowSyBl**: Integration — a backend (pypowsybl2grid) enables PowSyBl's power flow engine to serve as the simulation backend for Grid2Op environments, bringing PowSyBl's transmission-grade modeling capabilities into the training loop.
 - **dynaωo**: Both are RTE-developed projects for power system simulation. Dynaωo provides dynamic (time-domain) simulation for transient stability analysis; Grid2Op provides sequential decision-making simulation for control strategy development. They address different simulation needs and do not directly integrate.
 - **GridFM**: Both apply ML to power grid operations but with fundamentally different approaches. Grid2Op provides a simulation environment for reinforcement learning control strategies (sequential decision-making); GridFM develops pre-trained foundation models for power system analysis tasks (scenario evaluation). They do not directly integrate.
+- **AINETUS**: Dependency — AINETUS uses Grid2Op as the training and evaluation environment for its reinforcement learning agents, which deliver remedial-action recommendations to transmission operators.
 
 ## Maturity & Adoption
 

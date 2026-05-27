@@ -87,6 +87,7 @@ Software whose content supports operating, controlling, monitoring, dispatching,
 | p-SWAMP | | Transmission | Wide-area monitoring, protection, and control R&D platform |
 | Hyphae | | Behind-the-meter | DC microgrid autonomous energy sharing |
 | ORES | | Behind-the-meter | Modular, plug-and-play residential DER systems |
+| AINETUS | | Transmission | AI-based operator decision support: RL-based remedial action recommendations, explainability, and human-AI interaction |
 | SEAPATH | Substation Digitalization | Transmission, Distribution | Virtualization platform for protection, automation, and control applications |
 | CoMPAS | Substation Digitalization | Transmission, Distribution | Vendor-neutral IEC 61850 substation configuration tooling |
 | GEISA | AMI | Distribution | Grid edge application interoperability for smart meters and DA controllers |
@@ -147,7 +148,7 @@ When a project could reasonably fit in more than one segment or function, these 
 |  | **Generation** | **Transmission** | **Distribution** | **Behind-the-meter** |
 |---|---|---|---|---|
 | **Planning & Analysis** | covXtreme | PowSyBl, Dynawo, GridFM, OpenSynth | Power Grid Model, Arras, FIDOpower, GridFM, OpenSynth, OpenSTEF | |
-| **Operations** | RTDIP | OperatorFabric, SEAPATH⁺, CoMPAS⁺, TROLIE, Grid2Op°, p-SWAMP° | OperatorFabric, SOGNO, GXF, SEAPATH⁺, CoMPAS⁺, GEISA⁺, SEF | Hyphae, ORES, EVerest⁺, CitrineOS⁺ |
+| **Operations** | RTDIP | OperatorFabric, SEAPATH⁺, CoMPAS⁺, TROLIE, Grid2Op°, p-SWAMP°, AINETUS | OperatorFabric, SOGNO, GXF, SEAPATH⁺, CoMPAS⁺, GEISA⁺, SEF | Hyphae, ORES, EVerest⁺, CitrineOS⁺ |
 | **Markets & Programs** | RTC-Tools | | Shapeshifter, OpenLEADR, CDS Registration, CDS Customer Data, URPX | FlexMeasures, OpenDSM |
 
 ⁺ = subcategory (Substation Digitalization, EV Charging, or AMI)
@@ -171,7 +172,7 @@ Each project overview includes an "Industry Solution Categories" section with tw
 
 | Industry Solution | Description | Projects |
 |------------------|-------------|----------|
-| **EMS** | Energy Management System — transmission grid operations | PowSyBl, Dynawo, TROLIE |
+| **EMS** | Energy Management System — transmission grid operations | PowSyBl, Dynawo, TROLIE, AINETUS |
 | **ADMS** | Advanced Distribution Management System — distribution grid operations | SOGNO, Power Grid Model, OpenSTEF |
 | **DERMS** | Distributed Energy Resource Management System — DER coordination | FlexMeasures, OpenLEADR, Shapeshifter, SEF |
 | **Digital Substation** | Digitalized protection, automation, and control | SEAPATH, CoMPAS |
@@ -213,6 +214,7 @@ Identifies projects where **AI or machine learning is core to the project's purp
 
 | Project | Rationale |
 |---------|-----------|
+| AINETUS | Reinforcement learning agents, graph neural solver, and AI explainability ARE the project |
 | GridFM | Foundation models ARE the project |
 | OpenSTEF | ML forecasting pipeline is the core capability |
 | OpenSynth | Generative AI models (VAE, diffusion) are the core |
@@ -256,6 +258,7 @@ Describes **what you are adopting when you adopt this project**. Single-select b
 
 | Project | Intent | AI/ML | Modeling & Sim | Deliverable |
 |---------|--------|-------|----------------|-------------|
+| AINETUS | Applied | AI/ML | Software |
 | Arras | Applied | | Modeling & Sim | Software |
 | Battery Data Alliance | Applied | | | Specification |
 | CDS Customer Data | Applied | | | Specification |
