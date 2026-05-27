@@ -73,7 +73,7 @@ Distribution
 
 ### Function
 
-Flexibility & Markets
+Markets & Programs
 
 ### Industry Solution Categories
 

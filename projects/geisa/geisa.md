@@ -71,7 +71,7 @@ Distribution
 
 ### Function
 
-Flexibility & Markets
+Operations — AMI
 
 ### Industry Solution Categories
 

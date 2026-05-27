@@ -79,7 +79,7 @@ Distribution (primary), Transmission (secondary — transport forecasts at DSO-t
 
 ### Function
 
-Grid Operations
+Planning & Analysis
 
 ### Industry Solution Categories
 

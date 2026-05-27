@@ -69,11 +69,11 @@ Reduces the integration burden when a DSO or aggregator needs to exchange data w
 
 ### Grid Segment
 
-Customer (primary), Distribution (secondary)
+Distribution
 
 ### Function
 
-Interoperability & Data
+Operations
 
 ### Industry Solution Categories
 

@@ -76,11 +76,11 @@ Enables energy service companies and asset operators to optimize the dispatch of
 
 ### Grid Segment
 
-Customer
+Behind-the-meter
 
 ### Function
 
-Flexibility & Markets
+Markets & Programs
 
 ### Industry Solution Categories
 

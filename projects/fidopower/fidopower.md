@@ -69,7 +69,7 @@ Distribution
 
 ### Function
 
-Grid Modeling & Simulation
+Planning & Analysis
 
 ### Industry Solution Categories
 

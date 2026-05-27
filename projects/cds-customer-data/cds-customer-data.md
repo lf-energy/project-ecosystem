@@ -74,11 +74,11 @@ Eliminates the need for third-party energy service providers to build custom dat
 
 ### Grid Segment
 
-Customer (primary), Distribution (secondary)
+Distribution (primary), Behind-the-meter (secondary)
 
 ### Function
 
-Interoperability & Data
+Markets & Programs
 
 ### Industry Solution Categories
 

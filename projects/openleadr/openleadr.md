@@ -69,11 +69,11 @@ Gives utilities and aggregators a standards-based way to signal demand response 
 
 ### Grid Segment
 
-Distribution (primary), Customer (secondary)
+Distribution (primary), Behind-the-meter (secondary)
 
 ### Function
 
-Flexibility & Markets
+Markets & Programs
 
 ### Industry Solution Categories
 

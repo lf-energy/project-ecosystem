@@ -74,7 +74,7 @@ Transmission
 
 ### Function
 
-Grid Modeling & Simulation
+Planning & Analysis
 
 ### Industry Solution Categories
 
@@ -90,6 +90,7 @@ Grid Modeling & Simulation
 
 - **Project Intent:** Applied
 - **AI/ML:** No
+- **Modeling & Simulation:** Yes
 - **Deliverable Type:** Software
 
 ## Related Projects

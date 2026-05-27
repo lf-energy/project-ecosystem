@@ -66,15 +66,15 @@ None. covXtreme is a statistical analysis toolkit and does not directly implemen
 
 ## Grid Context
 
-covXtreme is a general-purpose statistical toolkit, not a grid-specific solution. Its primary documented applications are in offshore metocean engineering. The grid context below reflects potential applicability rather than current use.
+covXtreme is a general-purpose statistical toolkit. Its primary documented applications are in offshore metocean engineering, with grid-relevant use in offshore wind resource and structural design.
 
 ### Grid Segment
 
-Generation (secondary — applicable to offshore wind resource assessment and turbine foundation design, where characterizing joint extremes of wave height, wind speed, and structural loading is required)
+Generation (offshore wind resource assessment and turbine foundation design, where characterizing joint extremes of wave height, wind speed, and structural loading is required)
 
 ### Function
 
-Does not map to a function category. See taxonomy.md.
+Planning & Analysis
 
 ### Industry Solution Categories
 

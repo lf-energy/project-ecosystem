@@ -75,11 +75,11 @@ URPX is itself an emerging standard — a new open semantic standard for rate pl
 
 ### Grid Segment
 
-Customer (primary), Distribution (secondary)
+Distribution (primary), Behind-the-meter (secondary)
 
 ### Function
 
-Interoperability & Data
+Markets & Programs
 
 ### Industry Solution Categories
 

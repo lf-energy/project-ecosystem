@@ -68,11 +68,11 @@ None. APIS uses a proprietary peer-to-peer negotiation protocol over TCP/IP. The
 
 ### Grid Segment
 
-Customer
+Behind-the-meter
 
 ### Function
 
-Flexibility & Markets
+Operations
 
 ### Industry Solution Categories
 

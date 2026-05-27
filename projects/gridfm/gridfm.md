@@ -74,7 +74,7 @@ Transmission, Distribution
 
 ### Function
 
-Grid Modeling & Simulation
+Planning & Analysis
 
 ### Industry Solution Categories
 
@@ -90,6 +90,7 @@ None. GridFM is a standalone research and development platform. Foundation model
 
 - **Project Intent:** Research
 - **AI/ML:** Yes
+- **Modeling & Simulation:** Yes
 - **Deliverable Type:** Software
 
 ## Related Projects
