@@ -71,7 +71,7 @@ Distribution
 
 ### Function
 
-Operations — AMI
+Operations
 
 ### Industry Solution Categories
 

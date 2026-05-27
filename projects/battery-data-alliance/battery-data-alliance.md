@@ -89,7 +89,7 @@ Outside the grid taxonomy. BDA's function is data and format standardization for
 
 - **Project Intent:** Applied
 - **AI/ML:** No
-- **Deliverable Type:** Specification
+- **Deliverable Type:** Specification, Software, Data
 
 ## Related Projects
 

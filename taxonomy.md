@@ -73,8 +73,6 @@ Software whose content supports operating, controlling, monitoring, dispatching,
 
 **Subcategory: EV Charging** — Charging infrastructure firmware and management systems. In project overviews, indicated as `Operations — EV Charging`.
 
-**Subcategory: AMI** — Smart metering and grid-edge application infrastructure. In project overviews, indicated as `Operations — AMI`.
-
 | Project | Subcategory | Grid Segment | What it does |
 |---------|------------|-------------|-------------|
 | RTDIP | | Generation | Cloud-native time-series data platform for sensor and meter data at scale |
@@ -90,7 +88,7 @@ Software whose content supports operating, controlling, monitoring, dispatching,
 | AINETUS | | Transmission | AI-based operator decision support: RL-based remedial action recommendations, explainability, and human-AI interaction |
 | SEAPATH | Substation Digitalization | Transmission, Distribution | Virtualization platform for protection, automation, and control applications |
 | CoMPAS | Substation Digitalization | Transmission, Distribution | Vendor-neutral IEC 61850 substation configuration tooling |
-| GEISA | AMI | Distribution | Grid edge application interoperability for smart meters and DA controllers |
+| GEISA | | Distribution | Grid edge application interoperability for smart meters and DA controllers |
 | EVerest | EV Charging | Behind-the-meter | Standards-compliant EV charger firmware stack |
 | CitrineOS | EV Charging | Behind-the-meter | OCPP-based charging station management system |
 
@@ -148,10 +146,10 @@ When a project could reasonably fit in more than one segment or function, these 
 |  | **Generation** | **Transmission** | **Distribution** | **Behind-the-meter** |
 |---|---|---|---|---|
 | **Planning & Analysis** | covXtreme | PowSyBl, Dynawo, GridFM, OpenSynth | Power Grid Model, Arras, FIDOpower, GridFM, OpenSynth, OpenSTEF | |
-| **Operations** | RTDIP | OperatorFabric, SEAPATH⁺, CoMPAS⁺, TROLIE, Grid2Op°, p-SWAMP°, AINETUS | OperatorFabric, SOGNO, GXF, SEAPATH⁺, CoMPAS⁺, GEISA⁺, SEF | Hyphae, ORES, EVerest⁺, CitrineOS⁺ |
+| **Operations** | RTDIP | OperatorFabric, SEAPATH⁺, CoMPAS⁺, TROLIE, Grid2Op°, p-SWAMP°, AINETUS | OperatorFabric, SOGNO, GXF, SEAPATH⁺, CoMPAS⁺, GEISA, SEF | Hyphae, ORES, EVerest⁺, CitrineOS⁺ |
 | **Markets & Programs** | RTC-Tools | | Shapeshifter, OpenLEADR, CDS Registration, CDS Customer Data, URPX | FlexMeasures, OpenDSM |
 
-⁺ = subcategory (Substation Digitalization, EV Charging, or AMI)
+⁺ = subcategory (Substation Digitalization or EV Charging)
 ° = Research intent
 
 **Not shown:** Battery Data Alliance is listed in [Outside the Grid Taxonomy](#outside-the-grid-taxonomy).
@@ -234,7 +232,7 @@ Identifies projects that provide **modeling or simulation capability**, regardle
 
 ### Deliverable Type
 
-Describes **what you are adopting when you adopt this project**. Single-select based on primary output.
+Describes **what you are adopting when you adopt this project**. Most projects have one primary deliverable type. Projects that genuinely ship in multiple modes (e.g., a specification with reference software and reference datasets) may be tagged with multiple values.
 
 | Value | You're adopting... |
 |-------|-------------------|
@@ -249,7 +247,7 @@ Describes **what you are adopting when you adopt this project**. Single-select b
 | CDS Customer Data | Specification |
 | CDS Registration | Specification |
 | URPX | Specification |
-| Battery Data Alliance | Specification |
+| Battery Data Alliance | Specification, Software, Data |
 | ORES | Specification |
 | OpenSynth | Data |
 | *(all others)* | Software |
@@ -258,9 +256,9 @@ Describes **what you are adopting when you adopt this project**. Single-select b
 
 | Project | Intent | AI/ML | Modeling & Sim | Deliverable |
 |---------|--------|-------|----------------|-------------|
-| AINETUS | Applied | AI/ML | Software |
+| AINETUS | Applied | AI/ML | | Software |
 | Arras | Applied | | Modeling & Sim | Software |
-| Battery Data Alliance | Applied | | | Specification |
+| Battery Data Alliance | Applied | | | Specification, Software, Data |
 | CDS Customer Data | Applied | | | Specification |
 | CDS Registration | Applied | | | Specification |
 | CitrineOS | Applied | | | Software |
