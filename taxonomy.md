@@ -57,7 +57,7 @@ Software whose content supports analytical activities — modeling, simulation s
 |---------|-------------|-------------|
 | PowSyBl | Transmission | Network modeling, power flow, contingency analysis, capacity calculation |
 | Dynawo | Transmission | Dynamic and transient power system simulation |
-| GridFM | Transmission, Distribution | Foundation models for power system analysis |
+| OpenGridFM | Transmission, Distribution | Foundation models for power system analysis |
 | Power Grid Model | Distribution | High-performance steady-state distribution network analysis |
 | Arras | Distribution | Agent-based distribution system scenario planning |
 | FIDOpower | Distribution | Interactive notebook-based distribution analysis workflows |
@@ -145,7 +145,7 @@ When a project could reasonably fit in more than one segment or function, these 
 
 |  | **Generation** | **Transmission** | **Distribution** | **Behind-the-meter** |
 |---|---|---|---|---|
-| **Planning & Analysis** | covXtreme | PowSyBl, Dynawo, GridFM, OpenSynth | Power Grid Model, Arras, FIDOpower, GridFM, OpenSynth, OpenSTEF | |
+| **Planning & Analysis** | covXtreme | PowSyBl, Dynawo, OpenGridFM, OpenSynth | Power Grid Model, Arras, FIDOpower, OpenGridFM, OpenSynth, OpenSTEF | |
 | **Operations** | RTDIP | OperatorFabric, SEAPATH⁺, CoMPAS⁺, TROLIE, Grid2Op°, p-SWAMP°, AINETUS | OperatorFabric, SOGNO, GXF, SEAPATH⁺, CoMPAS⁺, GEISA, SEF | Hyphae, ORES, EVerest⁺, CitrineOS⁺ |
 | **Markets & Programs** | RTC-Tools | | Shapeshifter, OpenLEADR, CDS Registration, CDS Customer Data, URPX | FlexMeasures, OpenDSM |
 
@@ -201,7 +201,7 @@ Applied projects follow the normal deployment maturity arc (R&D → Piloting →
 | Project | Intent | Rationale |
 |---------|--------|-----------|
 | Grid2Op | Research | Simulation environment for grid control research and competitions |
-| GridFM | Research | Foundation model research for power systems — may transition to Applied if it produces operational tools |
+| OpenGridFM | Research | Foundation model research for power systems — may transition to Applied if it produces operational tools |
 | OpenSynth | Research | Synthetic data generation for research and model training |
 | p-SWAMP | Research | Wide-area monitoring R&D platform and testbed |
 | *(all others)* | Applied | |
@@ -213,7 +213,7 @@ Identifies projects where **AI or machine learning is core to the project's purp
 | Project | Rationale |
 |---------|-----------|
 | AINETUS | Reinforcement learning agents, graph neural solver, and AI explainability ARE the project |
-| GridFM | Foundation models ARE the project |
+| OpenGridFM | Foundation models ARE the project |
 | OpenSTEF | ML forecasting pipeline is the core capability |
 | OpenSynth | Generative AI models (VAE, diffusion) are the core |
 
@@ -226,7 +226,7 @@ Identifies projects that provide **modeling or simulation capability**, regardle
 | PowSyBl | Power system modeling and power flow simulation |
 | Dynawo | Dynamic and transient simulation |
 | Power Grid Model | Steady-state distribution simulation |
-| GridFM | Foundation-model-based power system simulation |
+| OpenGridFM | Foundation-model-based power system simulation |
 | Arras | Agent-based distribution scenario simulation |
 | SOGNO | DPsim simulation engine as a component |
 
@@ -270,7 +270,7 @@ Describes **what you are adopting when you adopt this project**. Most projects h
 | FlexMeasures | Applied | | | Software |
 | GEISA | Applied | | | Specification |
 | Grid2Op | Research | | | Software |
-| GridFM | Research | AI/ML | Modeling & Sim | Software |
+| OpenGridFM | Research | AI/ML | Modeling & Sim | Software |
 | GXF | Applied | | | Software |
 | Hyphae | Applied | | | Software |
 | OpenDSM | Applied | | | Software |
