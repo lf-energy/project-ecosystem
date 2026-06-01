@@ -148,7 +148,7 @@ Be specific about relationships:
 - "Complements": Use together for fuller solution
 Examples:
 - "FlexMeasures: OpenSTEF predicts load, FlexMeasures optimizes flexibility to manage it"
-- "GridFM: Both use ML for grid; OpenSTEF is specialized forecasting, GridFM is general foundation models"
+- "OpenGridFM: Both use ML for grid; OpenSTEF is specialized forecasting, OpenGridFM is general foundation models"
 -->
 
 ## Maturity & Adoption
