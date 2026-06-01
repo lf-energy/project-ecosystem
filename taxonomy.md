@@ -1,6 +1,6 @@
 # LF Energy Project Taxonomy
 
-**Last Updated:** 2026-05-27
+**Last Updated:** 2026-06-01
 
 ## Contents
 
@@ -91,6 +91,7 @@ Software whose content supports operating, controlling, monitoring, dispatching,
 | GEISA | | Distribution | Grid edge application interoperability for smart meters and DA controllers |
 | EVerest | EV Charging | Behind-the-meter | Standards-compliant EV charger firmware stack |
 | CitrineOS | EV Charging | Behind-the-meter | OCPP-based charging station management system |
+| CUPID | | Behind-the-meter, Distribution | IEEE 2030.5-over-NATS communication middleware and legacy protocol converter for DER |
 
 ### Markets & Programs
 
@@ -146,7 +147,7 @@ When a project could reasonably fit in more than one segment or function, these 
 |  | **Generation** | **Transmission** | **Distribution** | **Behind-the-meter** |
 |---|---|---|---|---|
 | **Planning & Analysis** | covXtreme | PowSyBl, Dynawo, OpenGridFM, OpenSynth | Power Grid Model, Arras, FIDOpower, OpenGridFM, OpenSynth, OpenSTEF | |
-| **Operations** | RTDIP | OperatorFabric, SEAPATH⁺, CoMPAS⁺, TROLIE, Grid2Op°, p-SWAMP°, AINETUS | OperatorFabric, SOGNO, GXF, SEAPATH⁺, CoMPAS⁺, GEISA, SEF | Hyphae, ORES, EVerest⁺, CitrineOS⁺ |
+| **Operations** | RTDIP | OperatorFabric, SEAPATH⁺, CoMPAS⁺, TROLIE, Grid2Op°, p-SWAMP°, AINETUS | OperatorFabric, SOGNO, GXF, SEAPATH⁺, CoMPAS⁺, GEISA, SEF, CUPID | Hyphae, ORES, EVerest⁺, CitrineOS⁺, CUPID |
 | **Markets & Programs** | RTC-Tools | | Shapeshifter, OpenLEADR, CDS Registration, CDS Customer Data, URPX | FlexMeasures, OpenDSM |
 
 ⁺ = subcategory (Substation Digitalization or EV Charging)
@@ -264,6 +265,7 @@ Describes **what you are adopting when you adopt this project**. Most projects h
 | CitrineOS | Applied | | | Software |
 | CoMPAS | Applied | | | Software |
 | covXtreme | Applied | | | Software |
+| CUPID | Applied | | | Software |
 | Dynawo | Applied | | Modeling & Sim | Software |
 | EVerest | Applied | | | Software |
 | FIDOpower | Applied | | | Software |
