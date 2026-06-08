@@ -1,6 +1,6 @@
 # FlexMeasures
 
-**Last Updated:** 2026-05-06
+**Last Updated:** 2026-06-01
 
 ## Table of Contents
 
@@ -103,6 +103,7 @@ Markets & Programs
 - **Shapeshifter**: Complementary — an aggregator could use FlexMeasures to compute optimal dispatch schedules for its asset portfolio in response to flex requests received via Shapeshifter's UFTP protocol. FlexMeasures decides *what* each asset should do; Shapeshifter handles the *trading* of that flexibility with grid operators.
 - **OpenSTEF**: Complementary — OpenSTEF forecasts energy load at grid locations, FlexMeasures optimizes flexible assets to manage consumption. In a congestion management workflow, OpenSTEF identifies where congestion will occur and FlexMeasures could determine how flexible assets should respond.
 - **OpenLEADR**: Complementary — FlexMeasures computes optimal schedules, while OpenLEADR provides the OpenADR signaling layer to communicate demand response signals to devices. An aggregator could use FlexMeasures to determine the optimal charging profile and OpenLEADR to signal EV chargers to execute it.
+- **CUPID**: Complementary — FlexMeasures decides what each DER should do; CUPID can serve as the device-facing protocol layer, carrying those dispatch decisions to and monitoring telemetry back from inverters, batteries, EV chargers, and other DERs over IEEE 2030.5.
 - **RTC-Tools**: Overlapping scope — both can optimize energy storage dispatch. RTC-Tools is a lower-level optimization framework that supports broader problem classes (multi-market value stacking, stochastic optimization, Modelica-based physical modeling, hydropower) but requires more engineering effort to deploy. FlexMeasures is a higher-level application with a REST API, web UI, multi-tenancy, and built-in forecasting that is more turnkey for behind-the-meter flexibility.
 
 ## Maturity & Adoption

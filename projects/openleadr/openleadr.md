@@ -1,6 +1,6 @@
 # OpenLEADR
 
-**Last Updated:** 2026-05-13
+**Last Updated:** 2026-06-01
 
 ## Table of Contents
 
@@ -96,6 +96,7 @@ Markets & Programs
 - **Shapeshifter**: Adjacent protocol, different model — Shapeshifter implements UFTP, a flexibility *trading* protocol with bilateral negotiation, bidding, and financial settlement. OpenLEADR implements OpenADR, a demand response *signaling* protocol where a utility sends signals and devices respond. They can be complementary: an aggregator could receive a flex order via Shapeshifter and dispatch its devices via OpenADR signals delivered through OpenLEADR.
 - **EVerest**: Complementary for EV charging — EVerest manages charge point operations (OCPP, ISO 15118), while OpenLEADR provides the grid signal interface. An experimental EVerest module (RsOpenADR3) uses openleadr-rs to receive demand response signals from a VTN and translate them into EVerest energy limits, enabling grid operators to manage EV charging load via OpenADR. Not yet merged to the EVerest main branch.
 - **FlexMeasures**: Complementary — FlexMeasures computes optimal schedules for flexible assets, while OpenLEADR provides the OpenADR signaling layer to communicate demand response signals to devices. An aggregator could use FlexMeasures to determine the optimal charging profile and OpenLEADR to signal EV chargers to execute it.
+- **CUPID**: Complementary at different layers of a flexibility stack — OpenLEADR delivers program-level DR signals (events, prices, schedules) to an aggregator or customer site; CUPID carries the resulting device-level monitoring and control to DERs over IEEE 2030.5.
 
 ## Maturity & Adoption
 

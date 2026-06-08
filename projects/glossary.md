@@ -2,7 +2,7 @@
 
 Terms and acronyms used across LF Energy project overviews. Target audience: utility engineers with familiarity in digital systems.
 
-**Last Updated:** 2026-03-13
+**Last Updated:** 2026-06-01
 
 <!-- When adding entries, maintain alphabetical order within each section. -->
 
@@ -23,6 +23,7 @@ Terms and acronyms used across LF Energy project overviews. Target audience: uti
 - **CIM-CGMES** — Common Grid Model Exchange Standard. Profile of CIM (IEC 61970/61968/62325) for exchanging power system network models between utilities and coordination centers.
 - **CPO** — Charge Point Operator. Entity that operates and maintains a network of EV charging stations.
 - **CPMS** — Charging Point Management System. See CSMS.
+- **CSIP** — Common Smart Inverter Profile. A SunSpec-published implementation profile of IEEE 2030.5 that defines the subset of resources, behaviors, and security requirements needed for smart inverter interoperability under California Rule 21. CSIP also publishes a conformance test procedure. CSIP-AUS is the Australian counterpart used by the Distributed Energy Integration Program.
 - **CSMS** — Charging Station Management System. Cloud software that remotely manages a network of EV chargers — handling session tracking, authorization, availability monitoring, and firmware updates. Communicates with chargers via OCPP. "CSMS" is the term introduced by OCPP 2.0.1; the older term "Central System" (and the informal "CPMS") refer to the same functional role.
 - **ASHRAE Guideline 14** — ASHRAE measurement standard for evaluating energy savings from building retrofits and efficiency programs. Defines fractional savings uncertainty (FSU) calculations used in M&V. Referenced by OpenDSM for uncertainty quantification.
 - **Battery cycler** — Laboratory test equipment that charges and discharges battery cells under controlled conditions, recording voltage, current, and temperature over time. Major manufacturers include Maccor, Arbin, and Neware. The raw data output format is proprietary to each manufacturer — a key problem the Battery Data Alliance addresses.
@@ -56,6 +57,7 @@ Terms and acronyms used across LF Energy project overviews. Target audience: uti
 - **HMI** — Human-Machine Interface. Operator display and control interface for monitoring and interacting with substation or grid equipment.
 - **HVDC** — High-Voltage Direct Current. Transmission technology used for long-distance power transfer and interconnecting asynchronous grids.
 - **IEC 61851** — International standard for electric vehicle conductive charging systems. Defines physical signaling, safety requirements, and communication between EVs and charging stations (e.g., the PWM pilot signal for AC charging).
+- **IEEE 2030.5** — IEEE standard (also known as Smart Energy Profile 2.0) defining a communication protocol between distributed energy resources and the utility-side, aggregator, or DERMS platforms that monitor and dispatch them. Built around a REST/HTTP transport with XML resources covering DER status, control, pricing, and metering. Mandated for DER interconnection by California Rule 21 (smart inverters) and by the Australian CSIP-AUS profile.
 - **IEEE C37.118** — IEEE standard for synchrophasor measurements and data transfer. Defines the format for PMU data frames (voltage/current phasors, frequency, rate of change of frequency) and the communication protocol between PMUs, PDCs, and applications. The primary data interface for WAMS.
 - **IEC 61850** — International standard for substation automation, defining data models, communication protocols, and configuration language (SCL) for substation devices.
 - **IED** — Intelligent Electronic Device. A microprocessor-based device in a substation that performs protection, monitoring, or control functions (e.g., digital protection relays).
@@ -107,6 +109,7 @@ Terms and acronyms used across LF Energy project overviews. Target audience: uti
 - **Ceph** — Distributed storage system that replicates data across cluster nodes. Used by SEAPATH to ensure VM disk images survive hardware failures.
 - **Corosync / Pacemaker** — Linux high-availability clustering stack. Corosync handles cluster communication; Pacemaker manages resource failover. Used by SEAPATH for automatic VM migration when a server fails.
 - **KVM** — Kernel-based Virtual Machine. Linux hypervisor that enables running virtual machines with near-native performance.
+- **NATS** — Open-source, cloud-native publish/subscribe messaging system. Uses a lightweight protocol with subject-based routing to support asynchronous many-to-many communication between distributed services. Provides at-most-once and (via JetStream) at-least-once delivery semantics. Used by CUPID as the transport for IEEE 2030.5 messages in place of HTTP/REST to enable real-time, many-to-many DER coordination.
 - **PREEMPT_RT** — Real-time patch for the Linux kernel that provides deterministic scheduling guarantees, enabling time-critical applications to meet strict latency requirements.
 - **PSS/E** — Power System Simulator for Engineering (Siemens). Widely used commercial tool for transmission system analysis; PowSyBl supports its data format.
 - **Foundation model** — A large AI model pre-trained on broad data that can be fine-tuned for specific downstream tasks. In the power systems context, OpenGridFM applies this approach using graph neural networks trained on power flow data, which can then be adapted for tasks like contingency analysis or optimal power flow approximation.
