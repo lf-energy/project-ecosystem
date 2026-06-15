@@ -1,6 +1,6 @@
 # LF Energy Project Taxonomy
 
-**Last Updated:** 2026-06-01
+**Last Updated:** 2026-06-15
 
 ## Contents
 
@@ -84,6 +84,7 @@ Software whose content supports operating, controlling, monitoring, dispatching,
 | Grid2Op | | Transmission | Simulation environment for developing automated grid control strategies |
 | p-SWAMP | | Transmission | Wide-area monitoring, protection, and control R&D platform |
 | Hyphae | | Behind-the-meter | DC microgrid autonomous energy sharing |
+| CityLearn | | Behind-the-meter | Simulation environment for benchmarking demand-side building energy control strategies |
 | ORES | | Behind-the-meter | Modular, plug-and-play residential DER systems |
 | AINETUS | | Transmission | AI-based operator decision support: RL-based remedial action recommendations, explainability, and human-AI interaction |
 | SEAPATH | Substation Digitalization | Transmission, Distribution | Virtualization platform for protection, automation, and control applications |
@@ -139,6 +140,7 @@ When a project could reasonably fit in more than one segment or function, these 
 - **FlexMeasures, OpenDSM** — M&P / BTM. Aggregator-deployed platforms that orchestrate or measure customer-side participation in DSO-run programs.
 - **Hyphae, ORES, EVerest, CitrineOS** — Operations / BTM. Operational systems for BTM assets, not market participation platforms.
 - **Grid2Op, p-SWAMP** — Operations / Transmission + Research-intent. Content is an operational system at research maturity.
+- **CityLearn** — Operations / BTM + Research-intent. The demand-side analog to Grid2Op: a Gymnasium control environment whose content is operational DER coordination (storage dispatch, device power modulation) at research maturity. Demand-response framing could suggest M&P, but it does not encode market-clearing or program enrollment/measurement/settlement — its activity content is operational control.
 - **OpenSTEF** — P&A / Distribution. Forecasting is analytical even when its output feeds operations.
 - **SOGNO** — Operations / Distribution primary, with secondary value in P&A (DPsim, CIM tooling).
 
@@ -147,7 +149,7 @@ When a project could reasonably fit in more than one segment or function, these 
 |  | **Generation** | **Transmission** | **Distribution** | **Behind-the-meter** |
 |---|---|---|---|---|
 | **Planning & Analysis** | covXtreme | PowSyBl, Dynawo, OpenGridFM, OpenSynth | Power Grid Model, Arras, FIDOpower, OpenGridFM, OpenSynth, OpenSTEF | |
-| **Operations** | RTDIP | OperatorFabric, SEAPATH⁺, CoMPAS⁺, TROLIE, Grid2Op°, p-SWAMP°, AINETUS | OperatorFabric, SOGNO, GXF, SEAPATH⁺, CoMPAS⁺, GEISA, SEF, CUPID | Hyphae, ORES, EVerest⁺, CitrineOS⁺, CUPID |
+| **Operations** | RTDIP | OperatorFabric, SEAPATH⁺, CoMPAS⁺, TROLIE, Grid2Op°, p-SWAMP°, AINETUS | OperatorFabric, SOGNO, GXF, SEAPATH⁺, CoMPAS⁺, GEISA, SEF, CUPID | Hyphae, ORES, EVerest⁺, CitrineOS⁺, CUPID, CityLearn° |
 | **Markets & Programs** | RTC-Tools | | Shapeshifter, OpenLEADR, CDS Registration, CDS Customer Data, URPX | FlexMeasures, OpenDSM |
 
 ⁺ = subcategory (Substation Digitalization or EV Charging)
@@ -202,6 +204,7 @@ Applied projects follow the normal deployment maturity arc (R&D → Piloting →
 | Project | Intent | Rationale |
 |---------|--------|-----------|
 | Grid2Op | Research | Simulation environment for grid control research and competitions |
+| CityLearn | Research | Simulation environment for demand-side control research and competitions |
 | OpenGridFM | Research | Foundation model research for power systems — may transition to Applied if it produces operational tools |
 | OpenSynth | Research | Synthetic data generation for research and model training |
 | p-SWAMP | Research | Wide-area monitoring R&D platform and testbed |
@@ -263,6 +266,7 @@ Describes **what you are adopting when you adopt this project**. Most projects h
 | CDS Customer Data | Applied | | | Specification |
 | CDS Registration | Applied | | | Specification |
 | CitrineOS | Applied | | | Software |
+| CityLearn | Research | | | Software |
 | CoMPAS | Applied | | | Software |
 | covXtreme | Applied | | | Software |
 | CUPID | Applied | | | Software |
