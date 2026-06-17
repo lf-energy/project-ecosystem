@@ -123,6 +123,7 @@ Production
 
 - Alliander (production user)
 - Enexis (production user)
+- DataThings (production user)
 - Stedin
 - TU Delft
 - TU Eindhoven
