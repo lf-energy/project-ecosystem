@@ -1,6 +1,6 @@
 # Grid2Op
 
-**Last Updated:** 2026-06-01
+**Last Updated:** 2026-06-15
 
 ## Table of Contents
 
@@ -98,6 +98,7 @@ None. Grid2Op is a standalone research and development tool, not a component of 
 - **dynaωo**: Both are RTE-developed projects for power system simulation. Dynaωo provides dynamic (time-domain) simulation for transient stability analysis; Grid2Op provides sequential decision-making simulation for control strategy development. They address different simulation needs and do not directly integrate.
 - **OpenGridFM**: Both apply ML to power grid operations but with fundamentally different approaches. Grid2Op provides a simulation environment for reinforcement learning control strategies (sequential decision-making); OpenGridFM develops pre-trained foundation models for power system analysis tasks (scenario evaluation). They do not directly integrate.
 - **AINETUS**: Dependency — AINETUS uses Grid2Op as the training and evaluation environment for its reinforcement learning agents, which deliver remedial-action recommendations to transmission operators.
+- **CityLearn**: Complementary — both are Gymnasium-based simulation environments for developing control strategies, but on opposite sides of the meter. Grid2Op models transmission grid operations (supply side); CityLearn models demand-side building energy coordination. Linking the two could enable joint study of coordinated supply- and demand-side control.
 
 ## Maturity & Adoption
 
