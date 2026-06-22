@@ -1,6 +1,6 @@
 # CityLearn
 
-**Last Updated:** 2026-06-15
+**Last Updated:** 2026-06-22
 
 ## Table of Contents
 
@@ -102,6 +102,7 @@ None. CityLearn is a standalone research and development environment, not a comp
 ## Related Projects
 
 - **Grid2Op**: Complementary — both are Gymnasium-based simulation environments for developing control strategies, but on opposite sides of the meter. Grid2Op models transmission grid operations (supply side); CityLearn models demand-side building energy coordination. Linking the two could enable joint study of coordinated supply- and demand-side control. They do not currently integrate.
+- **Power Grid Model**: Complementary across the distribution/behind-the-meter boundary — CityLearn coordinates building distributed energy resources to reshape a district's aggregated demand; Power Grid Model (PGM) computes the resulting distribution grid state (voltages, line loading, congestion). Coupling the two could evaluate the network impact of building-level control strategies. CityLearn does not model network topology, so the handoff requires mapping its aggregated demand onto a PGM feeder model; they do not currently integrate.
 - **OpenSynth**: Complementary data source — OpenSynth's synthetic smart-meter datasets and grid scenarios could be used to generate prototypical neighborhoods for CityLearn simulations. Both are research-intent projects serving the modeling and ML community.
 - **FlexMeasures**: Similar domain, different intent — both coordinate flexible behind-the-meter assets (batteries, EV chargers, heat pumps). FlexMeasures is an applied, production energy management system that computes dispatch schedules for real assets via a REST API; CityLearn is a research environment for developing and benchmarking the control algorithms themselves. Approaches validated in CityLearn could inform applied schedulers like FlexMeasures.
 

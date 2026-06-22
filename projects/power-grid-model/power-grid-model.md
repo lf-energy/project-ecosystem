@@ -1,6 +1,6 @@
 # Power Grid Model
 
-**Last Updated:** 2026-05-01
+**Last Updated:** 2026-06-22
 
 ## Table of Contents
 
@@ -103,6 +103,7 @@ Planning & Analysis
 - **PowSyBl**: Similar domain, different scope — PowSyBl focuses on transmission-level modeling (Java-based, used by TSOs like RTE), while PGM focuses on distribution-level analysis (C++/Python, used by DSOs). They are complementary across voltage levels rather than competing.
 - **SOGNO**: Both provide distribution-level power system analysis. SOGNO's pyvolt provides distribution state estimation with a CIM-native data model. PGM's high-performance calculation engine could serve as an alternative or complementary analytical backend within the SOGNO platform architecture.
 - **Arras**: Both address distribution system analysis. Arras (formerly GridLab-D) focuses on distribution system simulation and planning with agent-based modeling. PGM is a lower-level calculation library that can serve as a building block within planning tools.
+- **CityLearn**: Complementary across the behind-the-meter/distribution boundary — CityLearn is a research environment for building-level DER control that reshapes a district's aggregated demand. Those demand profiles could feed PGM power flow calculations to assess the distribution network impact of building control strategies. The two do not currently integrate.
 
 ### External
 
