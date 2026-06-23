@@ -1,6 +1,6 @@
 # covXtreme
 
-**Last Updated:** 2026-03-13
+**Last Updated:** 2026-06-23
 
 ## Table of Contents
 
@@ -70,7 +70,7 @@ covXtreme is a general-purpose statistical toolkit. Its primary documented appli
 
 ### Grid Segment
 
-Generation (offshore wind resource assessment and turbine foundation design, where characterizing joint extremes of wave height, wind speed, and structural loading is required)
+Cross-cutting (grid segment is not a meaningful axis — covXtreme is a general-purpose statistical method, not a grid-located tool). Its documented grid-relevant application is offshore wind resource assessment and turbine foundation design, where characterizing joint extremes of wave height, wind speed, and structural loading is required.
 
 ### Function
 
