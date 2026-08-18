@@ -17,14 +17,14 @@
 ## Basic Info
 
 - LF Energy webpage: https://lfenergy.org/projects/openleadr/
-- Website: 
+- Website: https://openleadr.org/
 - Code: https://github.com/openleadr
 - Documentation: https://github.com/OpenLEADR/openleadr-rs
 - Calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/openleadr?view=month
-- LinkedIn:
+- LinkedIn: 
 - Community:
 	- Mailing List: https://lists.lfenergy.org/g/openleadr
-	- Slack: https://lfenergy.slack.com/archives/C045K9YGX52
+	- Slack: https://app.slack.com/client/TLU68MTML/C045K9YGX52
 - LFX Insights: https://insights.linuxfoundation.org/project/openleadr
 - Other:
 
@@ -34,7 +34,7 @@ Reference implementations of the OpenADR standard for automated demand response 
 
 ## Overview
 
-OpenLEADR provides implementations of the OpenADR (Open Automated Demand Response) standard, which defines how a grid operator or aggregator communicates demand response signals to devices and systems that can adjust their energy consumption. The standard uses a client-server model: a Virtual Top Node (VTN) operated by the utility or aggregator publishes demand response programs containing price signals, usage limits, or event notifications, and Virtual End Nodes (VENs) on the device or aggregator side receive those signals and report back on their response. OpenLEADR's active implementation, openleadr-rs, is a Rust-based OpenADR 3.0 VTN server and VEN client library.
+OpenLEADR provides implementations of the OpenADR (Open Automated Demand Response) standard, which defines how a grid operator or aggregator communicates demand response signals to devices and systems that can adjust their energy consumption. The standard uses a client-server model: a Virtual Top Node (VTN) operated by the utility or aggregator publishes demand response programs containing price signals, usage limits, or event notifications, and Virtual End Nodes (VENs) on the device or aggregator side receive those signals and report back on their response. OpenLEADR's active implementation, openleadr-rs, is a Rust-based OpenADR 3.1 VTN server and VEN client library.
 
 Demand response is a key tool for managing grid congestion without building new infrastructure. When a distribution grid approaches capacity limits — due to electrification, EV charging coincidence, or distributed generation — the operator needs a standardized way to signal devices to reduce or shift their consumption. Without a common protocol, each utility-device integration requires custom development. OpenADR provides that common protocol, and OpenLEADR provides an implementation that any party can deploy, avoiding dependence on proprietary demand response platforms.
 
@@ -60,6 +60,8 @@ Gives utilities and aggregators a standards-based way to signal demand response 
 - PostgreSQL backend for data persistence
 - Passes 128 of 168 OpenADR Alliance test cases; 38 failures relate to the unimplemented subscription (webhook) feature, and 2 to access control granularity differences
 - CLI tool for testing and prototyping (in progress)
+- VTN support for signalling over MQTT and WebSockets
+- VTN support for resource groups (to be standardized in OpenADR 3.2)
 
 ### Relevant Standards
 
@@ -123,7 +125,7 @@ R&D
 
 OpenLEADR was revived with an OpenADR 3.0 implementation (openleadr-rs) after the original maintainer of the OpenADR 2.0b Python implementation stepped away. The Python library (openleadr-python) remains available but is no longer actively developed. The openleadr-rs implementation joined the existing LF Energy OpenLEADR project in fall 2024.
 
-The OpenADR standard originated at Lawrence Berkeley National Laboratory in 2009 and is managed by the OpenADR Alliance. Version 3.0 (released 2024) provides a simplified REST/JSON API as an alternative to the XML-based 2.0b specification (2015). OpenADR 3.1 was released in August 2025; openleadr-rs has a 3.1 implementation branch in development.
+The OpenADR standard originated at Lawrence Berkeley National Laboratory in 2009 and is managed by the OpenADR Alliance. Version 3.0 (released 2024) provides a simplified REST/JSON API as an alternative to the XML-based 2.0b specification (2015). OpenADR 3.1 was released in August 2025; openleadr-rs released support for OpenADR 3.1 in March 2026.
 
 The Dutch Grid Aware Charging (GAC) initiative — based on the Dutch National Charging Infrastructure Agenda — is the primary adoption context. Dutch DSOs (Alliander, Enexis, Stedin) and CPOs are using OpenADR profiles to coordinate EV charging with grid capacity, addressing nationwide grid congestion. ElaadNL's involvement as both a domain expert in charging infrastructure and a primary developer of openleadr-rs positions the project at the intersection of the EV charging and grid operations domains.
 
