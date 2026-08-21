@@ -59,7 +59,7 @@ Software whose content supports analytical activities — modeling, simulation s
 |---------|-------------|-------------|
 | PowSyBl | Transmission | Network modeling, power flow, contingency analysis, capacity calculation |
 | Dynawo | Transmission | Dynamic and transient power system simulation |
-| OpenGridFM | Transmission, Distribution | Foundation models for power system analysis |
+| OpenGridFM | Transmission (primary), Distribution (secondary) | Foundation models for power system analysis |
 | EnerGNN | Transmission | Graph neural network library for real-life and full-scale energy networks |
 | Power Grid Model | Distribution | High-performance steady-state distribution network analysis |
 | Arras | Distribution | Agent-based distribution system scenario planning |
@@ -181,7 +181,7 @@ Each project overview includes an "Industry Solution Categories" section with tw
 
 | Industry Solution | Description | Projects |
 |------------------|-------------|----------|
-| **EMS** | Energy Management System — transmission grid operations | PowSyBl, Dynawo, TROLIE, AINETUS |
+| **EMS** | Energy Management System — transmission grid operations | PowSyBl, Dynawo, TROLIE, AINETUS, OpenGridFM |
 | **ADMS** | Advanced Distribution Management System — distribution grid operations | SOGNO, Power Grid Model, OpenSTEF |
 | **DERMS** | Distributed Energy Resource Management System — DER coordination | FlexMeasures, OpenLEADR, Shapeshifter, SEF |
 | **Digital Substation** | Digitalized protection, automation, and control | SEAPATH, CoMPAS |
@@ -213,11 +213,14 @@ Applied projects follow the normal deployment maturity arc (R&D → Piloting →
 |---------|--------|-----------|
 | Grid2Op | Research | Simulation environment for grid control research and competitions |
 | CityLearn | Research | Simulation environment for demand-side control research and competitions |
-| OpenGridFM | Research | Foundation model research for power systems — may transition to Applied if it produces operational tools |
 | OpenSynth | Research | Synthetic data generation for research and model training |
 | p-SWAMP | Research | Wide-area monitoring R&D platform and testbed |
 | Smart HEMS Benchmark | Research | Benchmarking/evaluation platform for residential DER and HEMS |
 | *(all others)* | Applied | |
+
+**Notes on specific placements**
+
+- **OpenGridFM** was previously tagged Research, on the reasoning that foundation models for power systems were a research direction rather than an operational tool. It was reclassified to Applied in August 2026: the project now ships a named solver (GENCO) validated against operational Hydro-Québec SCADA data, publishes an application package for distribution networks, and positions itself for a hybrid production workflow alongside classical solvers. Intent describes purpose, not maturity — deployment maturity remains R&D.
 
 ### AI/ML
 
@@ -240,7 +243,7 @@ Identifies projects that provide **modeling or simulation capability**, regardle
 | PowSyBl | Power system modeling and power flow simulation |
 | Dynawo | Dynamic and transient simulation |
 | Power Grid Model | Steady-state distribution simulation |
-| OpenGridFM | Foundation-model-based power system simulation |
+| OpenGridFM | Foundation models for power system analysis |
 | Arras | Agent-based distribution scenario simulation |
 | SOGNO | DPsim simulation engine as a component |
 
@@ -264,6 +267,7 @@ Describes **what you are adopting when you adopt this project**. Most projects h
 | Battery Data Alliance | Specification, Software, Data |
 | ORES | Specification |
 | OpenSynth | Data |
+| OpenGridFM | Software, Data |
 | *(all others)* | Software |
 
 ### Cross-Cutting Tag Summary
@@ -287,7 +291,7 @@ Describes **what you are adopting when you adopt this project**. Most projects h
 | FlexMeasures | Applied | | | Software |
 | GEISA | Applied | | | Specification |
 | Grid2Op | Research | | | Software |
-| OpenGridFM | Research | AI/ML | Modeling & Sim | Software |
+| OpenGridFM | Applied | AI/ML | Modeling & Sim | Software, Data |
 | GXF | Applied | | | Software |
 | Hyphae | Applied | | | Software |
 | OpenDSM | Applied | | | Software |
