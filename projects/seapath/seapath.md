@@ -1,6 +1,6 @@
 # SEAPATH
 
-**Last Updated:** 2026-03-13
+**Last Updated:** 2026-08-21
 
 ## Table of Contents
 
@@ -34,11 +34,11 @@ Industrial-grade real-time virtualization platform for hosting protection, autom
 
 ## Overview
 
-SEAPATH is a real-time virtualization platform that enables substation functions — protection, automation, HMI, gateways, monitoring — to run as software on shared servers instead of dedicated hardware devices. It is designed for deterministic performance and high availability, typically deployed as a cluster of three servers with automatic failover and distributed storage. The platform uses an infrastructure-as-code approach for reproducible deployment across substations, and is available in two OS flavors: Debian (package-based, easier to maintain) and Yocto (source-built, fully reproducible builds).
+SEAPATH is a real-time virtualization platform that enables substation functions — protection, automation, HMI, gateways, monitoring — to run as software on shared servers instead of dedicated hardware devices. It is designed for deterministic performance and high availability, typically deployed as a cluster of three servers with automatic failover and distributed storage. The platform uses an infrastructure-as-code approach for reproducible deployment across substations, and runs on several Linux bases: Debian (package-based, easier to maintain), Yocto (source-built, fully reproducible builds), and enterprise distributions.
 
-Substations today rely on dedicated hardware for each function — separate physical devices for protection relays, HMIs, gateways, and automation controllers, often from a single vendor in a turnkey arrangement. This creates vendor lock-in, limits flexibility, and means that adding or updating functions requires new hardware. SEAPATH decouples applications from hardware by providing a vendor-neutral platform layer. Multiple vendors' applications can run as virtual machines on the same cluster, with the utility controlling the platform independently. Cluster-based redundancy enables new resilience patterns — when a server fails, VMs automatically migrate to surviving nodes — that aren't possible with dedicated devices.
+Substations today rely on dedicated hardware for each function — separate physical devices for protection relays, HMIs, gateways, and automation controllers, often from a single vendor in a turnkey arrangement. This ties the utility to one supplier, limits flexibility, and means that adding or updating functions requires new hardware. SEAPATH decouples applications from hardware by providing a vendor-neutral platform layer. Multiple vendors' applications can run as virtual machines on the same cluster, with the utility controlling the platform independently. Cluster-based redundancy enables new resilience patterns — when a server fails, VMs automatically migrate to surviving nodes — that aren't possible with dedicated devices.
 
-SEAPATH is deployed in substations by grid operators. RTE (the French TSO) uses SEAPATH in its R#SPACE program for virtualizing HMI, gateway, and automation functions, and is working toward virtualizing protection functions. National Grid Electricity Transmission and GE Vernova have validated SEAPATH for virtualized protection use cases. The platform is hardware-agnostic across x86_64 servers with virtualization support (VT-x/VT-d); production environments typically use IEC 61850-certified server hardware. All contributions are validated through 1000+ automated tests — covering resiliency, cybersecurity, real-time performance, and IEC 61850 latency — run on physical hardware in CI facilities at RTE and Savoir-faire Linux.
+SEAPATH is running in production substations. RTE (the French TSO) uses SEAPATH in its R#SPACE program for virtualizing HMI, gateway, and automation functions, and is working toward virtualizing protection functions; as of the project's July 2026 annual review, RTE reported six substations in operation with four more planned by year end, and EcoPhi reported 22 SEAPATH instances running in substations. Alliander, Elia, and Avangrid are evaluating the platform in lab environments. National Grid Electricity Transmission and GE Vernova have validated SEAPATH for virtualized protection use cases. The platform is hardware-agnostic across x86_64 servers with virtualization support (VT-x/VT-d); production environments typically use IEC 61850-certified server hardware. All contributions are validated through 1000+ automated tests — covering resiliency, cybersecurity, real-time performance, and IEC 61850 latency — run on physical hardware in CI facilities at RTE and Savoir-faire Linux.
 
 ![SEAPATH and how it fits in a substation](images/seapath_substation.jpg)
 *Image shows SEAPATH and how it fits in a substation. Best used for utility engineer audience.*
@@ -65,7 +65,7 @@ Enables utilities to virtualize substation functions on a vendor-neutral platfor
 - **Infrastructure as code**: Ansible-based deployment and configuration enables reproducible, scalable provisioning across substations
 - **Time synchronization**: Hardware PTP (IEEE 1588) and NTP support for precision timing required by substation applications
 - **Cybersecurity hardening**: Security-by-design approach with ANSSI BP-028 compliance testing and security-focused CI validation
-- **Multiple OS flavors**: Debian (package-based, easier maintenance) and Yocto (source-built, fully reproducible) to match different operational preferences
+- **Multiple OS flavors**: Debian (package-based, easier maintenance) and Yocto (source-built, fully reproducible) to match different operational preferences, plus image builds for enterprise Linux distributions — SUSE Linux Enterprise Server 16 and RHEL 9 / CentOS Stream 9
 
 ### Relevant Standards
 
@@ -106,42 +106,62 @@ Operations — Substation Digitalization
 
 ### LF Energy Stage
 
-Early Adoption
+Graduated
 
 ### Deployment Maturity
 
-Piloting
+Production
 
 ### Supporting / Adopting Organizations
 
-Tracked by the project community here: https://lf-energy.atlassian.net/wiki/spaces/SEAP/pages/367099911/SEAPATH+Initiatives+in+the+World
+Maintained by the project in [ADOPTERS.md](https://github.com/seapath/.github/blob/main/ADOPTERS.md), with additional context tracked at [SEAPATH Initiatives in the World](https://lf-energy.atlassian.net/wiki/spaces/SEAP/pages/367099911/SEAPATH+Initiatives+in+the+World).
 
 #### Utilities
 
 - RTE (production)
-- Elia (evaluation)
+- Alliander (lab evaluation)
+- Elia (lab evaluation)
+- Avangrid (lab evaluation)
 - Amprion (evaluation)
 - National Grid (evaluation)
-- Avangrid (evaluation)
 - Enedis (evaluation)
-- Alliander (evaluation)
+- Hydro-Québec (evaluation)
 
-#### Vendors
+#### vIED and PAC Vendors
 
+- ABB
 - GE Vernova
 - Schneider Electric
-- ABB
 - Siemens Energy
-- SDEL
+- Hitachi Energy
+- Sprecher Automation
 - SCLE
-- Welotec
-- EcoPhi
+- SDEL
+
+#### Other Vendors
+
+- EcoPhi (production; substation monitoring and analytics applications)
+- Welotec (production; hardware platform validated with SEAPATH)
+- Advantech
 - Omicron
-- Red Hat
+
+#### Software and Integrators
+
 - Savoir-faire Linux
+- Red Hat
+- SUSE
+- Smile
+- RTE International
+- Capgemini
+- Sopra Steria
+- CIRCE
 
 ## Learn More
 
+- [SEAPATH 2026 Annual Review to the LF Energy TAC](https://github.com/lf-energy/tac/blob/main/meetings/2026/2026-07-21/SEAPATH_2026_Annual_Review.pdf)
+	- Date: 2026-07-21
+	- Type: Presentation
+	- [TAC meeting notes](https://tac.lfenergy.org/meetings/2026/2026-07-21/)
 - [EcoPhi on SEAPATH: Virtualizing Substation Monitoring and Analytics for Grid Efficiency and Reliability](https://lfenergy.org/ecophi-on-seapath-virtualizing-substation-monitoring-and-analytics-for-grid-efficiency-and-reliability/)
 	- Date: 2025-12-01
 	- Type: Case Study
@@ -176,6 +196,12 @@ The SEAPATH acronym officially means "Software Enabled Automation Platform and A
 
 SEAPATH is, to our knowledge, the only open source real-time virtualization platform purpose-built for substation PAC applications. The proprietary alternative in this space is VMware Edge Compute Stack (Broadcom), which offers a vPAC Ready Infrastructure reference architecture through the vPAC Alliance (whose founding members include Advantech, Intel, VMware, and ABB). SEAPATH's open source model gives utilities control over the platform layer rather than depending on a proprietary virtualization vendor — a strategic consideration given that substation infrastructure operates on 20+ year lifecycles.
 
+SEAPATH reached LF Energy Graduated stage in 2026. In the year leading up to it the project released SEAPATH 2.0 and its TSC voted to transfer the project to LF Europe governance.
+
 RTE launched the VIP'R (Virtual PAC RTE) R&D project in 2025 with ABB and Schneider Electric to extend SEAPATH from hosting automation and monitoring functions to hosting virtualized protection functions (vIEDs). This represents the next major frontier for substation virtualization, as protection is the most safety-critical function and has the strictest real-time requirements.
 
-Beyond the companies listed in Supporting/Adopting Companies, the SEAPATH project documentation indicates broader industry engagement from utilities (Elia, Hydro-Quebec, Enedis, Amprion, Avangrid), PAC vendors (Siemens Energy, EcoPhi), and hardware manufacturers (Advantech, AAeon). The depth of these companies' adoption or contribution varies and is not always clear from available sources, but the breadth of engagement across utilities, vendors, and technology companies is notable — it indicates interest from both the organizations deploying SEAPATH and the vendors whose applications run on it.
+Two organization lists exist and they differ. The project-maintained ADOPTERS.md gives per-organization status detail and is the more reliable source. The ecosystem slide in the July 2026 annual review is broader, grouping logos as "contributing and/or evaluating in lab/pre-production and/or using in production" without distinguishing between those. Hitachi Energy, Sprecher Automation, Advantech, Hydro-Québec, Smile, Capgemini, Sopra Steria, and CIRCE appear only on the slide, so the nature and depth of their involvement is unconfirmed.
+
+Contribution activity is concentrated in two organizations. LFX Insights data presented in the July 2026 annual review shows RTE and Savoir-faire Linux accounting for 49% and 47% of 2025 contributions respectively, and Savoir-faire Linux at 84% for the first half of 2026, with the project noting that much of that 2026 work was sponsored (SLES support, Qualcomm board support). This is a normal pattern for a platform project with a lead utility and a lead integrator, but it is worth tracking as the contributor base broadens.
+
+An Arm64 port exists but is early. The `meta-seapath-qcom` Yocto layer targets a single Qualcomm evaluation board (qcs9075-iq-9075-evk), and its distro configuration explicitly disables both clustering and security hardening to allow debugging. The production platform remains x86_64.
