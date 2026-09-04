@@ -1,8 +1,8 @@
 <!-- Filename: use the project name in kebab-case, e.g. power-grid-model.md, powsybl.md -->
 
-# ReLife
+# AssetLife
 
-**Last Updated:** 2026-07-24
+**Last Updated:** 2026-09-04
 
 ## Table of Contents
 
@@ -19,9 +19,9 @@
 ## Basic Info
 
 - LF Energy webpage: TODO: page in progress, not yet published
-- Website: https://opensource.rte-france.com/relife/
-- Code: https://github.com/rte-france/relife
-- Documentation: https://opensource.rte-france.com/relife/
+- Website: https://opensource.rte-france.com/AssetLife/
+- Code: https://github.com/AssetLife-project
+- Documentation: https://opensource.rte-france.com/AssetLife/
 - Calendar:
 - LinkedIn:
 - Community:
@@ -29,20 +29,20 @@
 	- Slack:
 - LFX Insights:
 - Other:
-	- PyPI: https://pypi.org/project/relife/
+	- PyPI: https://pypi.org/project/AssetLife/
 	- TAC proposal: https://github.com/lf-energy/tac/issues/762
 
 ## Description
 
-Built on reliability theory, ReLife helps infrastructure managers select maintenance policies that minimize socio-economic costs and justify investment decisions.
+Built on reliability theory, AssetLife helps infrastructure managers select maintenance policies that minimize socio-economic costs and justify investment decisions.
 
 ## Overview
 
-In the context of aging infrastructures and climate change, asset managers face critical investment decisions. ReLife helps asset managers perform quantitative risk analysis to evaluate and compare risk control options over large asset populations based on probability models along with socio-economic criteria. Quantitative risk analysis is highly desirable for justifying investment decisions, maximizing asset value and anticipating stocks and budgets.
+In the context of aging infrastructures and climate change, asset managers face critical investment decisions. AssetLife helps asset managers perform quantitative risk analysis to evaluate and compare risk control options over large asset populations based on probability models along with socio-economic criteria. Quantitative risk analysis is highly desirable for justifying investment decisions, maximizing asset value and anticipating stocks and budgets.
 
-ReLife analyzes historical asset data — failures, repairs, service duration, deterioration measurements, and contextual factors like location or corrosion levels — to build statistical models for lifetime distributions and failure behavior. These models are then used to compare maintenance strategies and determine when to maintain, repair, or replace assets by balancing preventive and corrective costs. It identifies optimal maintenance policies, and projects the expected total cost and replacement count over a planned horizon. Cost calculations include direct replacement expenses and societal costs, such as carbon shadow pricing, which strengthens the economic justification for renewal investments.
+AssetLife analyzes historical asset data — failures, repairs, service duration, deterioration measurements, and contextual factors like location or corrosion levels — to build statistical models for lifetime distributions and failure behavior. These models are then used to compare maintenance strategies and determine when to maintain, repair, or replace assets by balancing preventive and corrective costs. It identifies optimal maintenance policies, and projects the expected total cost and replacement count over a planned horizon. Cost calculations include direct replacement expenses and societal costs, such as carbon shadow pricing, which strengthens the economic justification for renewal investments.
 
-ReLife is used internally at RTE, the French transmission system operator, and by a growing set of other infrastructure operators. Its outputs feed the asset-renewal and capital-planning decisions that asset managers and investors make. Although it originates in grid asset management, the methods are general and apply to any aging asset population.
+AssetLife is used internally at RTE, the French transmission system operator, and by a growing set of other infrastructure operators. Its outputs feed the asset-renewal and capital-planning decisions that asset managers and investors make. Although it originates in grid asset management, the methods are general and apply to any aging asset population.
 
 The library is built on NumPy and SciPy and distributed as a Python package.
 
@@ -73,9 +73,9 @@ None directly implemented. The project describes its risk-informed decision-maki
 
 ### Grid Segment
 
-Cross-cutting (grid segment is not a meaningful axis — ReLife operates on asset failure/repair statistics, not on a physical location of the energy system, and applies to asset populations across all segments and beyond the grid)
+Cross-cutting (grid segment is not a meaningful axis — AssetLife operates on asset failure/repair statistics, not on a physical location of the energy system, and applies to asset populations across all segments and beyond the grid)
 
-<!-- Per taxonomy.md, "Cross-cutting" applies when grid segment is not a meaningful descriptor of where a project operates. ReLife is a horizontal reliability/renewal method library. This is distinct from multi-segment grid tools (which are multi-tagged by physical segment) and from "Outside the Grid Taxonomy" (off-grid, no Function). Lead/primary documented deployers are TSOs (RTE, TenneT), but the methods are asset-type-agnostic. -->
+<!-- Per taxonomy.md, "Cross-cutting" applies when grid segment is not a meaningful descriptor of where a project operates. AssetLife is a horizontal reliability/renewal method library. This is distinct from multi-segment grid tools (which are multi-tagged by physical segment) and from "Outside the Grid Taxonomy" (off-grid, no Function). Lead/primary documented deployers are TSOs (RTE, TenneT), but the methods are asset-type-agnostic. -->
 
 ### Function
 
@@ -101,7 +101,7 @@ Planning & Analysis
 
 ## Related Projects
 
-None. No LF Energy projects currently have documented technical integration, shared data flows, or complementary workflows with ReLife. (covXtreme is also a statistical toolkit, but shared statistical character is not a sufficient relationship — there is no integration or shared workflow.)
+None. No LF Energy projects currently have documented technical integration, shared data flows, or complementary workflows with AssetLife. (covXtreme is also a statistical toolkit, but shared statistical character is not a sufficient relationship — there is no integration or shared workflow.)
 
 ## Maturity & Adoption
 
@@ -109,7 +109,7 @@ None. No LF Energy projects currently have documented technical integration, sha
 
 Sandbox (proposed)
 
-<!-- TAC issue #762 proposes ReLife at Sandbox stage. -->
+<!-- TAC issue #762 proposes AssetLife at Sandbox stage. -->
 
 ### Deployment Maturity
 
@@ -120,7 +120,7 @@ Production (in transmission asset management at RTE; other operators at earlier 
 - RTE (project lead and primary developer; production user for transmission asset management)
 - Artelys (supports research and development)
 - TenneT, AusNet, GRTgaz (infrastructure operators using the library)
-- CentraleSupélec, Sorbonne Université (academic partners; ReLife is part of the CentraleSupélec engineering training program)
+- CentraleSupélec, Sorbonne Université (academic partners; AssetLife is part of the CentraleSupélec engineering training program)
 
 ## Learn More
 
@@ -128,9 +128,9 @@ Production (in transmission asset management at RTE; other operators at earlier 
 
 ## Additional Notes
 
-ReLife occupies an emerging asset-management niche in the LF Energy portfolio rather than a settled one. The taxonomy currently has no Asset Management function category; ReLife is classified under Planning & Analysis with a Cross-cutting grid segment (it shares this segment designation with covXtreme, the portfolio's other horizontal statistical method library). The taxonomy's watch note tracks whether a dedicated Asset Management function should emerge as related projects (e.g., reliability modeling, asset-condition analytics such as Raven) join.
+AssetLife occupies an emerging asset-management niche in the LF Energy portfolio rather than a settled one. The taxonomy currently has no Asset Management function category; AssetLife is classified under Planning & Analysis with a Cross-cutting grid segment (it shares this segment designation with covXtreme, the portfolio's other horizontal statistical method library). The taxonomy's watch note tracks whether a dedicated Asset Management function should emerge as related projects (e.g., reliability modeling, asset-condition analytics such as Raven) join.
 
-The maintainers emphasize that ReLife is a statistical toolbox rather than a simulator — a distinction worth preserving in any positioning. Its differentiator is bringing open, peer-reviewed reliability and renewal-theory methods, plus socioeconomic cost evaluation (including the shadow price of carbon), to asset-renewal decisions that are often made today with proprietary tools or simple age-based rules.
+The maintainers emphasize that AssetLife is a statistical toolbox rather than a simulator — a distinction worth preserving in any positioning. Its differentiator is bringing open, peer-reviewed reliability and renewal-theory methods, plus socioeconomic cost evaluation (including the shadow price of carbon), to asset-renewal decisions that are often made today with proprietary tools or simple age-based rules.
 
 The package API is still evolving (the maintainers note significant changes are ongoing despite a 1.0.0+ release history), so specific module and class names should be verified against current documentation before being cited externally.
 
