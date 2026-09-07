@@ -41,7 +41,7 @@ Grid Segment describes **where on the energy system** a project operates. These 
 
 Projects may be tagged with multiple segments when they genuinely operate across boundaries; indicate primary vs. secondary where there is a clear distinction. Some projects sit outside the grid taxonomy entirely (see [Outside the Grid Taxonomy](#outside-the-grid-taxonomy)). For ambiguous placements, see [Placement Principles](#placement-principles).
 
-**Cross-cutting (segment not applicable).** A small number of projects are horizontal method libraries whose value is a general analytical technique applied to asset data, rather than a tool that operates on a physical location of the energy system. For these, Grid Segment is not a meaningful axis, and they are tagged **Cross-cutting**. The test is deliberately narrow: it is not "how many segments does it touch?" (genuinely multi-segment *grid* tools such as OpenSynth, OpenGridFM, and SEAPATH are simply multi-tagged) but "is grid segment a meaningful descriptor of where this project operates?" If the project is a grid-located tool, use one or more segments; only if location is not a meaningful descriptor at all does it become Cross-cutting. Cross-cutting projects still carry a Function. This is distinct from [Outside the Grid Taxonomy](#outside-the-grid-taxonomy), which is reserved for projects off the grid value chain entirely that carry no Function. Current members: covXtreme, ReLife.
+**Cross-cutting (segment not applicable).** A small number of projects are horizontal method libraries whose value is a general analytical technique applied to asset data, rather than a tool that operates on a physical location of the energy system. For these, Grid Segment is not a meaningful axis, and they are tagged **Cross-cutting**. The test is deliberately narrow: it is not "how many segments does it touch?" (genuinely multi-segment *grid* tools such as OpenSynth, OpenGridFM, and SEAPATH are simply multi-tagged) but "is grid segment a meaningful descriptor of where this project operates?" If the project is a grid-located tool, use one or more segments; only if location is not a meaningful descriptor at all does it become Cross-cutting. Cross-cutting projects still carry a Function. This is distinct from [Outside the Grid Taxonomy](#outside-the-grid-taxonomy), which is reserved for projects off the grid value chain entirely that carry no Function. Current members: covXtreme, AssetLife.
 
 ## Function
 
@@ -67,7 +67,7 @@ Software whose content supports analytical activities — modeling, simulation s
 | OpenSynth | Transmission, Distribution | Synthetic grid topology and smart meter datasets for research and modeling |
 | OpenSTEF | Distribution | Short-term (up to 48-hour) energy load forecasting |
 | covXtreme | Cross-cutting | Statistical modeling of extreme environmental events for offshore wind and infrastructure design |
-| ReLife | Cross-cutting | Reliability/survival modeling and maintenance-policy optimization for asset renewal |
+| AssetLife | Cross-cutting | Reliability/survival modeling and maintenance-policy optimization for asset renewal |
 | Smart HEMS Benchmark | Behind-the-meter | Benchmarking of residential DER siting/sizing, HEMS dispatch, and VPP participation |
 
 ### Operations
@@ -122,7 +122,7 @@ This taxonomy is organized around the grid value chain. Some LF Energy projects 
 |---------|-----------|
 | Battery Data Alliance | Shared software standards and data formats for battery testing — addresses the battery R&D, manufacturing, and lab software ecosystem rather than grid operations |
 
-**Watch:** A dedicated asset management function may still emerge as anticipated 2026 project additions land. ReLife (reliability modeling and asset-renewal optimization) has now joined, classified Planning & Analysis / Cross-cutting. Raven (LiDAR-based asset-condition analytics) is anticipated. Revisit whether a dedicated Asset Management function is warranted once more than one such project is active.
+**Watch:** A dedicated asset management function may still emerge as anticipated 2026 project additions land. AssetLife (reliability modeling and asset-renewal optimization) has now joined, classified Planning & Analysis / Cross-cutting. Raven (LiDAR-based asset-condition analytics) is anticipated. Revisit whether a dedicated Asset Management function is warranted once more than one such project is active.
 
 ## Placement Principles
 
@@ -154,7 +154,7 @@ When a project could reasonably fit in more than one segment or function, these 
 
 |  | **Generation** | **Transmission** | **Distribution** | **Behind-the-meter** | **Cross-cutting** |
 |---|---|---|---|---|---|
-| **Planning & Analysis** | | PowSyBl, Dynawo, OpenGridFM, OpenSynth, EnerGNN | Power Grid Model, Arras, FIDOpower, OpenGridFM, OpenSynth, OpenSTEF | Smart HEMS Benchmark° | covXtreme, ReLife |
+| **Planning & Analysis** | | PowSyBl, Dynawo, OpenGridFM, OpenSynth, EnerGNN | Power Grid Model, Arras, FIDOpower, OpenGridFM, OpenSynth, OpenSTEF | Smart HEMS Benchmark° | covXtreme, AssetLife |
 | **Operations** | RTDIP | OperatorFabric, SEAPATH⁺, CoMPAS⁺, TROLIE, Grid2Op°, p-SWAMP°, AINETUS | OperatorFabric, SOGNO, GXF, SEAPATH⁺, CoMPAS⁺, GEISA, SEF, CUPID | Hyphae, ORES, EVerest⁺, CitrineOS⁺, CUPID, CityLearn° | |
 | **Markets & Programs** | RTC-Tools | | Shapeshifter, OpenLEADR, CDS Registration, CDS Customer Data, URPX | FlexMeasures, OpenDSM | |
 
@@ -303,7 +303,7 @@ Describes **what you are adopting when you adopt this project**. Most projects h
 | p-SWAMP | Research | | | Software |
 | Power Grid Model | Applied | | Modeling & Sim | Software |
 | PowSyBl | Applied | | Modeling & Sim | Software |
-| ReLife | Applied | | | Software |
+| AssetLife | Applied | | | Software |
 | RTC-Tools | Applied | | | Software |
 | RTDIP | Applied | | | Software |
 | SEAPATH | Applied | | | Software |
