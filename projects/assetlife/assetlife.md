@@ -1,6 +1,6 @@
 # AssetLife
 
-**Last Updated:** 2026-09-04
+**Last Updated:** 2026-09-22
 
 ## Table of Contents
 
@@ -79,7 +79,7 @@ Cross-cutting (grid segment is not a meaningful axis — AssetLife operates on a
 
 Planning & Analysis
 
-<!-- Reliability/risk modeling that produces insight (policy comparisons, replacement/budget projections) to inform investment decisions; does not act on real-time grid state. The taxonomy "Watch" note tracks whether a dedicated Asset Management function should emerge once a second such project (e.g., Raven) is active. -->
+<!-- Reliability/risk modeling that produces insight (policy comparisons, replacement/budget projections) to inform investment decisions; does not act on real-time grid state. The taxonomy "Watch" note tracks whether a dedicated Asset Management function should emerge VAREN is now a second asset-focused project; both remain in Planning & Analysis for now. -->
 
 ### Industry Solution Categories
 
@@ -126,7 +126,7 @@ Production (in transmission asset management at RTE; other operators at earlier 
 
 ## Additional Notes
 
-AssetLife occupies an emerging asset-management niche in the LF Energy portfolio rather than a settled one. The taxonomy currently has no Asset Management function category; AssetLife is classified under Planning & Analysis with a Cross-cutting grid segment (it shares this segment designation with covXtreme, the portfolio's other horizontal statistical method library). The taxonomy's watch note tracks whether a dedicated Asset Management function should emerge as related projects (e.g., reliability modeling, asset-condition analytics such as Raven) join.
+AssetLife occupies an emerging asset-management niche in the LF Energy portfolio rather than a settled one. The taxonomy currently has no Asset Management function category; AssetLife is classified under Planning & Analysis with a Cross-cutting grid segment (it shares this segment designation with covXtreme, the portfolio's other horizontal statistical method library). The taxonomy's watch note tracks whether a dedicated Asset Management function should emerge as related projects join. VAREN (LiDAR-based distribution asset and vegetation analytics) joined in 2026 and is also classified Planning & Analysis.
 
 The maintainers emphasize that AssetLife is a statistical toolbox rather than a simulator — a distinction worth preserving in any positioning. Its differentiator is bringing open, peer-reviewed reliability and renewal-theory methods, plus socioeconomic cost evaluation (including the shadow price of carbon), to asset-renewal decisions that are often made today with proprietary tools or simple age-based rules.
 

@@ -1,6 +1,6 @@
 # LF Energy Project Taxonomy
 
-**Last Updated:** 2026-07-01
+**Last Updated:** 2026-09-22
 
 ## Contents
 
@@ -69,6 +69,7 @@ Software whose content supports analytical activities — modeling, simulation s
 | covXtreme | Cross-cutting | Statistical modeling of extreme environmental events for offshore wind and infrastructure design |
 | AssetLife | Cross-cutting | Reliability/survival modeling and maintenance-policy optimization for asset renewal |
 | Smart HEMS Benchmark | Behind-the-meter | Benchmarking of residential DER siting/sizing, HEMS dispatch, and VPP participation |
+| VAREN | Distribution | Mobile LiDAR analytics for distribution asset mapping and vegetation encroachment |
 
 ### Operations
 
@@ -122,7 +123,7 @@ This taxonomy is organized around the grid value chain. Some LF Energy projects 
 |---------|-----------|
 | Battery Data Alliance | Shared software standards and data formats for battery testing — addresses the battery R&D, manufacturing, and lab software ecosystem rather than grid operations |
 
-**Watch:** A dedicated asset management function may still emerge as anticipated 2026 project additions land. AssetLife (reliability modeling and asset-renewal optimization) has now joined, classified Planning & Analysis / Cross-cutting. Raven (LiDAR-based asset-condition analytics) is anticipated. Revisit whether a dedicated Asset Management function is warranted once more than one such project is active.
+**Watch:** A dedicated asset management function may still emerge as anticipated 2026 project additions land. AssetLife (reliability modeling and asset-renewal optimization) has now joined, classified Planning & Analysis / Cross-cutting. VAREN (LiDAR-based distribution asset and vegetation analytics) joined in 2026, classified Planning & Analysis / Distribution. With two such projects active, both remain in Planning & Analysis for now (reviewed September 2026); revisit if more asset-management projects join.
 
 ## Placement Principles
 
@@ -147,6 +148,7 @@ When a project could reasonably fit in more than one segment or function, these 
 - **Grid2Op, p-SWAMP** — Operations / Transmission + Research-intent. Content is an operational system at research maturity.
 - **CityLearn** — Operations / BTM + Research-intent. The demand-side analog to Grid2Op: a Gymnasium control environment whose content is operational DER coordination (storage dispatch, device power modulation) at research maturity. Demand-response framing could suggest M&P, but it does not encode market-clearing or program enrollment/measurement/settlement — its activity content is operational control.
 - **OpenSTEF** — P&A / Distribution. Forecasting is analytical even when its output feeds operations.
+- **VAREN** — P&A / Distribution. Produces asset inventories and vegetation-risk assessments (including pruning work orders) that feed maintenance planning; it does not act on grid state.
 - **SOGNO** — Operations / Distribution primary, with secondary value in P&A (DPsim, CIM tooling).
 - **Smart HEMS Benchmark** — P&A / BTM + Research-intent. Contrast with CityLearn: CityLearn's content IS a control environment (Operations), whereas Smart HEMS Benchmark's defining activity is evaluation and ranking — it produces comparative metrics, sensitivity analyses, and rankings that inform decisions (system sizing, algorithm selection, VPP feasibility), does not act on real-time grid state, and includes a 1–15 year siting/sizing phase with no CityLearn analog. Its HEMS-dispatch phase has a secondary operational-control character. AI/ML is **No**: AI-driven controllers are among the methods it *evaluates*, not what the platform *is* (the CityLearn/FlexMeasures precedent); tagging it Yes would force broadening the AI/ML tag definition and dilute its discriminating value.
 
@@ -154,7 +156,7 @@ When a project could reasonably fit in more than one segment or function, these 
 
 |  | **Generation** | **Transmission** | **Distribution** | **Behind-the-meter** | **Cross-cutting** |
 |---|---|---|---|---|---|
-| **Planning & Analysis** | | PowSyBl, Dynawo, OpenGridFM, OpenSynth, EnerGNN | Power Grid Model, Arras, FIDOpower, OpenGridFM, OpenSynth, OpenSTEF | Smart HEMS Benchmark° | covXtreme, AssetLife |
+| **Planning & Analysis** | | PowSyBl, Dynawo, OpenGridFM, OpenSynth, EnerGNN | Power Grid Model, Arras, FIDOpower, OpenGridFM, OpenSynth, OpenSTEF, VAREN | Smart HEMS Benchmark° | covXtreme, AssetLife |
 | **Operations** | RTDIP | OperatorFabric, SEAPATH⁺, CoMPAS⁺, TROLIE, Grid2Op°, p-SWAMP°, AINETUS | OperatorFabric, SOGNO, GXF, SEAPATH⁺, CoMPAS⁺, GEISA, SEF, CUPID | Hyphae, ORES, EVerest⁺, CitrineOS⁺, CUPID, CityLearn° | |
 | **Markets & Programs** | RTC-Tools | | Shapeshifter, OpenLEADR, CDS Registration, CDS Customer Data, URPX | FlexMeasures, OpenDSM | |
 
@@ -191,6 +193,7 @@ Each project overview includes an "Industry Solution Categories" section with tw
 | **Network Planning** | Grid reinforcement and capacity studies | Arras, Power Grid Model, PowSyBl |
 | **WAMPAC** | Wide Area Monitoring, Protection, and Control | p-SWAMP |
 | **Market Management** | Wholesale and flexibility market systems | Shapeshifter, RTC-Tools |
+| **Vegetation Management** | Planning, scheduling, and tracking vegetation clearance work around power lines | VAREN |
 
 Not all projects appear in this table. Projects that are standalone tools or that occupy emerging categories without established utility system names may not have a Component of mapping.
 
@@ -233,6 +236,7 @@ Identifies projects where **AI or machine learning is core to the project's purp
 | OpenGridFM | Foundation models ARE the project |
 | OpenSTEF | ML forecasting pipeline is the core capability |
 | OpenSynth | Generative AI models (VAE, diffusion) are the core |
+| VAREN | Neural-network point cloud classification is the foundation the other algorithms build on |
 
 ### Modeling & Simulation
 
@@ -313,6 +317,7 @@ Describes **what you are adopting when you adopt this project**. Most projects h
 | SOGNO | Applied | | Modeling & Sim | Software |
 | TROLIE | Applied | | | Specification |
 | URPX | Applied | | | Specification |
+| VAREN | Applied | AI/ML | | Software |
 
 ## Maintaining the Taxonomy
 
