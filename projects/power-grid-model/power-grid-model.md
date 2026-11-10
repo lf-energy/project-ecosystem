@@ -21,12 +21,13 @@
 - Code: https://github.com/PowerGridModel
 - Documentation: https://power-grid-model.readthedocs.io/en/stable/
 - Calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/powergridmodel?view=month
-- LinkedIn:
+- LinkedIn: https://www.linkedin.com/showcase/power-grid-model/ 
 - Community:
 	- Mailing List: https://lists.lfenergy.org/g/powergridmodel
 	- Slack: https://lfenergy.slack.com/archives/C04UBM6S539
 	- GitHub Discussions: https://github.com/orgs/PowerGridModel/discussions
 - LFX Insights: https://insights.linuxfoundation.org/project/powergridmodel
+- Confluence: https://lf-energy.atlassian.net/wiki/spaces/PGM/overview
 - Other:
 
 ## Description
