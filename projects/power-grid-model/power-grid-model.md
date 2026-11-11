@@ -126,11 +126,16 @@ Production
 - Alliander (production user)
 - Enexis (production user)
 - DataThings (production user)
+- Emsys (production user)
 - Stedin
 - TU Delft
 - TU Eindhoven
 - RSE
 - Soptim
+- Bright Cubes
+- BBTG Energy Solutions
+- Gujranwala Electric Power Company
+- SIA Partners
 
 ## Learn More
 
